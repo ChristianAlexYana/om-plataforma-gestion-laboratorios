@@ -77,3 +77,45 @@ Finalmente, el proceso concluye notificando al docente que la nueva imagen se en
 - Solo podrán publicarse imágenes previamente validadas.
 - Toda nueva versión deberá registrarse en el catálogo institucional.
 - Las imágenes deberán cumplir las políticas de seguridad definidas por la institución.
+
+---
+
+## Formulario mínimo para solicitud (campos obligatorios)
+
+Por favor solicite la creación/actualización de una imagen completando los siguientes campos mínimos. Las solicitudes incompletas serán devueltas al solicitante.
+
+- Curso / Código:
+- Docente solicitante (nombre + email / GitHub):
+- Fecha requerida (YYYY-MM-DD):
+- Software + versión (ej.: Python 3.11, VSCode 1.82):
+- Justificación académica (máx. 300 palabras):
+- Entorno base requerido (SO / dependencias):
+- Componentes especiales (drivers, licencias, datasets):
+- Prioridad (Alta / Media / Baja):
+- Contacto técnico (nombre + email / GitHub):
+
+---
+
+## SLAs sugeridos
+
+| Prioridad | Respuesta inicial | Entrega objetivo |
+|-----------|-------------------:|-----------------:|
+| Alta      | < 2 días           | < 5 días         |
+| Media     | < 3 días           | < 10 días        |
+| Baja      | < 7 días           | < 30 días        |
+
+---
+
+## Indicadores mínimos (a reportar)
+
+- Tiempo desde solicitud hasta aprobación (días)
+- Tiempo desde aprobación hasta publicación (días)
+- Nº de solicitudes por prioridad
+- Nº de imágenes publicadas por mes
+
+---
+
+## Responsable / Última actualización
+
+- Responsable del proceso: Responsable del Catálogo de Imágenes (placeholder)
+- Última actualización: 2026-07-19
