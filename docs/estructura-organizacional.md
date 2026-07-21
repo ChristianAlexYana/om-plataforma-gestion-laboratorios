@@ -146,3 +146,28 @@ La implementación de esta estructura permite:
 - Mayor trazabilidad de las actividades, cambios de software e imágenes utilizadas.
 - Facilita la implementación y automatización de procesos BPMN.
 - Favorece la mejora continua mediante el análisis sistemático de indicadores.
+
+---
+
+## 8. Procesos Operativos Principales
+
+### 8.1 Proceso: Pedido de Imágenes de Contenedores para Cursos
+Este flujo garantiza que los entornos de software requeridos por los docentes estén probados, libres de vulnerabilidades y disponibles en el registry privado (**Harbor**) antes del inicio de clases.
+
+1. **Solicitud de Requerimientos (Docente):** Con mínimo 2 semanas de anticipación al inicio del semestre, el docente registra la solicitud especificando sistema operativo base, lenguaje, librerías y herramientas requeridas.
+2. **Evaluación de Factibilidad y Licencias (Resp. de Imágenes):** Se analiza si la imagen existe en Harbor o si debe construirse un `Dockerfile` personalizado, verificando que no incumpla políticas de software ni licencias restrictivas.
+3. **Construcción y Escaneo de Vulnerabilidades:** Se construye la imagen y se ejecuta un análisis automatizado con **Trivy**. Si se detectan vulnerabilidades críticas, se aplican parches o se notifica al docente.
+4. **Firma Digital y Publicación (Cosign):** Una vez aprobada, la imagen se firma digitalmente con **Cosign**, se le asigna su **SBOM** (inventario de software) y se etiqueta oficialmente en Harbor para su libre descarga.
+5. **Validación Final (Docente):** El docente descarga y prueba la imagen en el laboratorio para dar su conformidad final.
+
+---
+
+### 8.2 Proceso: Separación de Horarios de Laboratorio (Cursos y Proyectos)
+Este proceso regula la asignación de recursos físicos y capacidad de cómputo para evitar traslapes de horarios y optimizar el uso de las salas.
+
+1. **Carga del Horario Académico Base (Administrador del Lab):** Al inicio del semestre, el Administrador del Laboratorio ingresa en el sistema el horario oficial de clases fijas aprobadas por la facultad.
+2. **Solicitud de Bloques Especiales (Docentes / Investigadores):** Para sesiones extraordinarias, exámenes, laboratorios de recuperación o proyectos especiales, el docente solicita la reserva de franjas horarias a través de la plataforma.
+3. **Validación de Disponibilidad y Aprobación:** El sistema verifica de forma automática si existen cruces de horarios o capacidad física/servidores disponibles en Proxmox:
+   - **Si hay disponibilidad:** La reserva se aprueba automáticamente y se bloquea el aula/recursos.
+   - **Si hay conflicto:** El Administrador del Laboratorio interviene para proponer un horario alternativo o ajustar la asignación.
+4. **Habilitación de Reservas Libres (Estudiantes):** Las franjas horarias no ocupadas por clases o proyectos quedan disponibles para que los estudiantes reserven estaciones de trabajo de forma autónoma mediante validación por código QR.
