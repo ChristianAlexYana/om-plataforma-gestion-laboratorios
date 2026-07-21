@@ -159,21 +159,29 @@ El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que Organi
 1. ¿Qué otros procesos del laboratorio caen en el dominio "complicado" (procedimiento claro) frente a los que caen en el dominio "complejo" (requieren experimentación)?
 
 - **Comentario (Mauro Snayder Sullca Mamani):** Los procesos complicados son los operativos e infraestructurales que cuentan con un procedimiento técnico claro y predecible —como el mantenimiento de hardware, el alta de inventario, la configuración de redes/impresoras o el control de acceso físico por código QR—, mientras que los procesos complejos son aquellos donde las necesidades cambian constantemente y requieren experimentar para encontrar la mejor solución, tales como la curaduría del catálogo de imágenes en Harbor, la automatización de actualizaciones de software sin romper proyectos activos, y el ajuste de políticas de seguridad al escalar del entorno universitario al empresarial.
+- Comentario de Rodrigo:
+Lo complicado suele ser lo netamente técnico pero predecible, como configurar la red híbrida o establecer los pipelines de despliegue iniciales. Lo complejo, en mi experiencia, recae en la adopción del producto y el soporte técnico; por ejemplo, entender por qué un grupo de estudiantes no adopta la plataforma o cómo reaccionar en tiempo real ante un incidente de seguridad crítico en un entorno corporativo, donde no hay manuales estrictos y toca adaptarse sobre la marcha.
 
 <br>
 
 2. Si el proyecto creciera a 10 squads, ¿en qué punto convendría dividir el Tribe "Platform Lab" en dos tribes independientes?
 
 - **Comentario (Mauro Snayder Sullca Mamani):** Considero que el punto de quiebre para dividir el Tribe ocurre cuando las dependencias entre los 10 squads comienzan a generar cuellos de botella y las reuniones de alineación se vuelven ineficientes, momento en el cual sugiero separar la organización en dos Tribes especializadas: una enfocada en la infraestructura y operación física del laboratorio ("Lab Operations & Infrastructure" para hardware, Proxmox y reservas) y otra dedicada exclusivamente al desarrollo de la plataforma de software y seguridad ("Developer Platform & Enterprise Security" para contenedores, pipelines CI/CD y políticas de compliance).
+- Comentario de Rodrigo:
+Yo dividiría la Tribu en el momento en que la carga cognitiva empiece a afectar la agilidad general y nuestro tiempo de entrega (Time-to-Market) se dispare por exceso de reuniones. En lugar de separarlo por capas de infraestructura, propondría una división basada en el flujo de valor: una Tribu enfocada al 100% en la experiencia y agilidad del entorno Universitario, y otra dedicada puramente a los SLAs, seguridad y requerimientos rígidos del entorno Corporativo (Enterprise).
 
 <br>
 
 3. ¿Qué riesgos organizacionales aparecen si el rol de Process Owner dentro de cada squad no tiene tiempo protegido para documentar procesos?
 
 - **Comentario (Mauro Snayder Sullca Mamani):** Si como Process Owner no cuento con tiempo protegido para la documentación, el principal riesgo es la acumulación de "deuda de procesos" (process debt), lo que provocaría que el equipo priorice solo el código y genere un conocimiento informal que vive únicamente en las mentes de los desarrolladores; esto generaría silos de información y provocaría un colapso en la transferencia del proyecto al finalizar el semestre, obligando a los nuevos estudiantes a perder tiempo intentando descifrar cómo funciona la plataforma.
+- Comentario de Rodrigo:
+El riesgo inmediato es perder la trazabilidad operativa y fallar en posibles auditorías de calidad. Desde un enfoque DevSecOps, un proceso no documentado es un proceso inauditable y un cuello de botella en potencia. Si no hay estándares escritos, no podremos automatizar tareas a futuro, lo que ralentizará dramáticamente nuestra capacidad de respuesta ante incidentes (MTTR) cuando el proyecto escale a empresas.
 
 <br>
 
 4. ¿Cómo mediría usted, con indicadores concretos, si el modelo está logrando el equilibrio entre autonomía y alineación?
 
 - **Comentario (Mauro Snayder Sullca Mamani):** Para medir este equilibrio evaluaría, por un lado, la autonomía mediante el Cycle Time (logrando que un squad publique cambios en Harbor en menos de 48 horas sin bloqueos entre equipos) y, por otro lado, la alineación midiendo el índice de compliance (asegurando que el 100% de las imágenes cumpla con los estándares del Chapter mediante escaneos de Trivy sin vulnerabilidades críticas y firmas de Cosign), garantizando así que los squads avancen rápido pero bajo un mismo marco de calidad.
+- Comentario de Rodrigo:
+Me apoyaría directamente en las métricas DORA. La autonomía la evidenciaría con una alta Frecuencia de Despliegue (Deployment Frequency), comprobando que los equipos pueden lanzar valor a producción sin depender de otros. La alineación la controlaría con la Tasa de Fallos (Change Failure Rate); si los equipos son verdaderamente autónomos pero respetan los estándares técnicos definidos por su Chapter, la innovación será constante pero la tasa de errores se mantendrá al mínimo.
