@@ -1,8 +1,5 @@
 # Modelo Organizacional Ágil - Spotify Adaptado
 
-> **Comentario (Christian Yana):**
->
-> La adaptación del modelo Spotify al contexto académico está bien planteada. Para avanzar a ejecución, conviene especificar la configuración mínima en la primera etapa: número de squads y chapters a formar, responsables iniciales y entregables clave del primer sprint (por ejemplo: infraestructura mínima, catálogo inicial, runbooks). También es recomendable definir un par de métricas operativas para evaluar el progreso del modelo (por ejemplo: tiempo medio de ciclo de una solicitud y número de imágenes publicadas por mes).
 
 ## Tribe Principal
 **Nombre:** Platform Lab
@@ -36,3 +33,7 @@ Los **Chapters** serán liderados por profesores con experiencia en industria (m
 <strong>Comentario (Mauro Snayder Sullca Mamani):</strong><br>
 La propuesta organizacional basada en el Modelo Spotify facilita el desarrollo del proyecto mediante equipos multidisciplinarios. Como complemento, sería recomendable incorporar una estructura or[...]
 </div>
+
+> **Comentario (Christian Yana):**
+>
+> La adaptación del modelo Spotify al contexto académico está bien planteada. Para avanzar a ejecución, conviene especificar la configuración mínima en la primera etapa: número de squads y chapters a formar, responsables iniciales y entregables clave del primer sprint (por ejemplo: infraestructura mínima, catálogo inicial, runbooks). También es recomendable definir un par de métricas operativas para evaluar el progreso del modelo (por ejemplo: tiempo medio de ciclo de una solicitud y número de imágenes publicadas por mes).
