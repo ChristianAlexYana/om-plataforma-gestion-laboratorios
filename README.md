@@ -26,10 +26,10 @@
 
 ### Estructura Organizacional, Definición de Roles y Flujos Operativos del Laboratorio
 
-- [Runbook — Publicación de imagen en Harbor](docs/estructura-organizacional.md)
+- [Estructura Organizacional y Roles](docs/estructura-organizacional.md)
 
 ### Importancia de la Gobernanza, Licencias de Software y Trazabilidad en Empresas de Software
 
-- [Runbook — Publicación de imagen en Harbor](docs/gobernanza-licencias-trazabilidad.md)
+- [Gobernanza, Licencias y Trazabilidad](docs/gobernanza-licencias-trazabilidad.md)
 
 ---
