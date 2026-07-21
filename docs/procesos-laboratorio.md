@@ -161,3 +161,6 @@ Está diseñado para ser entregado como **trabajo de curso de Organización y M�
 
 ¿Deseas que agregue más procesos (ej. Gestión de Incidentes, Onboarding de Nuevos Usuarios, Cierre de Semestre, etc.) o que prepare una versión con PlantUML para generar diagramas reales?
 
+> ** Comentario de Rodrigo Estefanero:**
+
+> Lo más destacable de esta propuesta organizativa es que profesionaliza la gestión del laboratorio, operándolo como una verdadera empresa tecnológica. La implementación de una matriz RACI y diagramas BPMN elimina la ambigüedad en las responsabilidades, evitando cuellos de botella en la atención. Además, el fuerte enfoque en métricas de rendimiento (KPIs) —especialmente la meta de reducir la configuración del entorno a menos de 15 minutos— asegura que los estudiantes dediquen su tiempo a programar y no a lidiar con problemas de infraestructura. Es un enfoque totalmente orientado a la productividad y la mejora continua.
