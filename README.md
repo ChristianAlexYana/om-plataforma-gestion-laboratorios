@@ -24,4 +24,12 @@
 
 - [Runbook — Publicación de imagen en Harbor](docs/runbooks/runbook-publicacion-imagen.md)
 
+### Estructura Organizacional, Definición de Roles y Flujos Operativos del Laboratorio
+
+- [Runbook — Publicación de imagen en Harbor](docs/estructura-organizacional.md)
+
+### Importancia de la Gobernanza, Licencias de Software y Trazabilidad en Empresas de Software
+
+- [Runbook — Publicación de imagen en Harbor](docs/gobernanza-licencias-trazabilidad.md)
+
 ---
