@@ -1,164 +1,148 @@
 # Estructura Organizacional del Laboratorio de Computación
 
+
 ---
 
-# 1. Objetivos de la Organización
+## 1. Objetivos de la Organización
 
 La estructura organizacional propuesta busca alcanzar los siguientes objetivos:
 
-- Definir claramente las responsabilidades de cada participante.
-- Reducir la duplicidad de funciones.
-- Facilitar la comunicación entre los diferentes responsables.
-- Garantizar una adecuada administración de los recursos tecnológicos.
-- Estandarizar los procesos operativos del laboratorio.
-- Favorecer la mejora continua de los servicios brindados.
+- Definir claramente las responsabilidades de cada participante en la gestión física y virtual.
+- Reducir la duplicidad de funciones entre personal administrativo y académico.
+- Facilitar la comunicación fluida entre los responsables de desarrollo y de operación.
+- Garantizar una adecuada administración de los recursos tecnológicos (hardware e imágenes).
+- Estandarizar los procesos operativos del laboratorio mediante flujos BPMN.
+- Favorecer la mejora continua de los servicios brindados mediante indicadores de desempeño (KPIs).
 
 ---
 
-# 2. Principios Organizacionales
+## 2. Principios Organizacionales
 
 La organización del laboratorio se fundamenta en los siguientes principios:
 
-- Claridad en la asignación de responsabilidades.
-- Separación entre funciones administrativas y técnicas.
-- Coordinación permanente entre docentes y administradores.
-- Gestión basada en procesos.
-- Trazabilidad de las actividades realizadas.
-- Mejora continua mediante indicadores de desempeño.
+- **Claridad en la asignación de responsabilidades:** Definición puntual de funciones operativas, técnicas y estratégicas.
+- **Separación entre funciones administrativas y técnicas:** Desacople entre la gestión física de salas y la curaduría de software en contenedores.
+- **Coordinación permanente entre docentes y administradores:** Alineación previa al inicio de cada semestre académico.
+- **Gestión basada en procesos:** Estandarización de reservas, solicitudes de imágenes y gestión de incidencias.
+- **Trazabilidad de las actividades realizadas:** Registro auditable mediante SBOM, firmas digitales (*Cosign*) y métricas de uso.
+- **Mejora continua mediante indicadores de desempeño:** Evaluación periódica de tiempos de respuesta, nivel de automatización y tasa de ocupación.
 
 ---
 
-# 3. Organigrama General
+## 3. Organigrama General
 
-El siguiente organigrama representa la estructura organizacional mínima propuesta para el laboratorio.
+El siguiente organigrama representa la estructura organizacional mínima propuesta para la operación del laboratorio:
 
 ![Organigrama del Laboratorio](img/organigrama-laboratorio.png)
 
----
+## 4. Roles Organizacionales
 
-# 4. Roles Organizacionales
+### 4.1 Director de Tecnologías de Información
+Es el responsable de establecer las políticas generales relacionadas con la infraestructura tecnológica de la institución y la gestión del laboratorio.
 
-## 4.1 Director de Tecnologías de Información
-
-Es el responsable de establecer las políticas generales relacionadas con la infraestructura tecnológica de la institución.
-
-### Responsabilidades
-
-- Aprobar políticas tecnológicas.
-- Autorizar inversiones.
-- Supervisar el funcionamiento general del laboratorio.
-- Aprobar proyectos de mejora.
+#### Responsabilidades
+- Aprobar políticas tecnológicas, de seguridad y de licenciamiento de software.
+- Autorizar inversiones en hardware local (servidores Proxmox) y recursos en la nube.
+- Supervisar el funcionamiento general y el cumplimiento de metas del laboratorio.
+- Aprobar proyectos de mejora y la transición hacia estándares empresariales.
 
 ---
 
-## 4.2 Administrador del Laboratorio
+### 4.2 Administrador del Laboratorio
+Es el responsable directo de la operación física y la gestión diaria del laboratorio.
 
-Es el responsable directo de la operación del laboratorio.
-
-### Responsabilidades
-
-- Administrar recursos físicos.
-- Coordinar el uso de los laboratorios.
-- Gestionar inventarios.
-- Coordinar mantenimientos.
-- Supervisar al personal técnico.
-- Gestionar incidencias.
+#### Responsabilidades
+- Administrar recursos físicos (PCs, servidores, impresoras y equipamiento de red).
+- Coordinar el uso y la reserva de los laboratorios físicos mediante validación QR.
+- Gestionar inventarios y monitorear el estado operativo del hardware.
+- Coordinar mantenimientos preventivos y correctivos.
+- Supervisar las actividades del Equipo de Soporte Técnico.
+- Gestionar incidencias operativas y garantizar el control de acceso.
 
 ---
 
-## 4.3 Responsable del Catálogo de Imágenes
+### 4.3 Responsable del Catálogo de Imágenes
+Es el encargado de administrar el repositorio oficial de contenedores utilizados por los cursos y proyectos.
 
-Es el encargado de administrar el repositorio oficial de imágenes utilizadas por los cursos y proyectos.
-
-### Responsabilidades
-
-- Validar nuevas imágenes Docker.
-- Mantener actualizado el catálogo.
-- Verificar vulnerabilidades.
-- Aprobar nuevas versiones.
-- Documentar cambios realizados.
+#### Responsabilidades
+- Validar, empaquetar e importar nuevas imágenes Docker / Podman al registry privado (**Harbor**).
+- Mantener actualizado el catálogo y gestionar el historial de versiones por asignatura.
+- Verificar vulnerabilidades de seguridad en las imágenes utilizando herramientas de escaneo (**Trivy / Grype**).
+- Aprobar nuevas versiones, generar el inventario de software (**SBOM**) y firmar digitalmente las imágenes (**Cosign**).
+- Documentar los cambios realizados y asegurar que las imágenes estén disponibles para descarga local por parte de los estudiantes.
 
 ---
 
-## 4.4 Equipo de Soporte Técnico
+### 4.4 Equipo de Soporte Técnico
+Brinda soporte operativo y de conectividad de primer nivel a estudiantes y docentes.
 
-Brinda soporte operativo a estudiantes y docentes.
-
-### Responsabilidades
-
-- Resolver incidencias.
-- Instalar equipos cuando sea necesario.
-- Verificar funcionamiento del hardware.
-- Registrar problemas detectados.
+#### Responsabilidades
+- Resolver incidencias técnicas en las estaciones de trabajo del laboratorio.
+- Instalar y reconfigurar equipos físicos cuando sea necesario.
+- Verificar el correcto funcionamiento del hardware, periféricos y conectividad local.
+- Registrar problemas detectados para el análisis de causa raíz.
 
 ---
 
-## 4.5 Docentes
+### 4.5 Docentes
+Representan a los responsables académicos de cada curso y actúan como *Product Owners* de sus entornos de enseñanza.
 
-Representan a los responsables académicos de cada curso.
-
-### Responsabilidades
-
-- Solicitar imágenes de software.
-- Definir necesidades tecnológicas.
-- Validar recursos para los cursos.
-- Supervisar el correcto uso del laboratorio.
+#### Responsabilidades
+- Solicitar imágenes de software requeridas para sus asignaturas con anticipación al inicio del semestre.
+- Definir necesidades tecnológicas específicas para prácticas, evaluaciones y proyectos.
+- Validar los recursos e imágenes provistas en Harbor antes de iniciar sus sesiones.
+- Reservar bloques horarias para sus clases y supervisar el correcto uso de la infraestructura por parte de los alumnos.
 
 ---
 
-## 4.6 Estudiantes
+### 4.6 Estudiantes
+Son los usuarios finales directos de los recursos del laboratorio.
 
-Son los usuarios finales del laboratorio.
-
-### Responsabilidades
-
-- Utilizar correctamente los recursos.
-- Cumplir las políticas del laboratorio.
-- Reportar incidencias.
-- Utilizar únicamente imágenes autorizadas.
+#### Responsabilidades
+- Utilizar correctamente los recursos físicos y virtuales asignados.
+- Cumplir las políticas de uso, reserva y normas de convivencia del laboratorio.
+- Reportar incidencias o fallas en el software/hardware oportunamente.
+- Utilizar únicamente imágenes oficiales autorizadas y descargarlas para sus prácticas en PCs personales.
 
 ---
 
-# 5. Chapter de Organización y Procesos
+## 5. Chapter de Organización y Procesos
+Como parte del modelo organizacional propuesto, se incorpora un **Chapter de Organización y Procesos**, integrado por docentes con experiencia en gestión organizacional, arquitectura e ingeniería de procesos.
 
-Como parte del modelo organizacional propuesto se incorpora un **Chapter de Organización y Procesos**, integrado por docentes con experiencia en gestión organizacional y mejora de procesos.
+Su finalidad es asegurar que los procesos del laboratorio permanezcan documentados, estandarizados y alineados con los objetivos institucionales y las metodologías ágiles del proyecto.
 
-Su finalidad es asegurar que los procesos del laboratorio permanezcan documentados, estandarizados y alineados con los objetivos institucionales.
-
-Entre sus principales responsabilidades se encuentran:
-
-- Diseñar nuevos procesos.
-- Revisar procesos existentes.
-- Actualizar la documentación.
-- Definir indicadores.
-- Coordinar auditorías internas.
-- Promover la mejora continua.
+### Responsabilidades Principales
+- Diseñar y modelar nuevos procesos operativos bajo notación **BPMN**.
+- Revisar y optimizar los procesos existentes de forma periódica.
+- Mantener actualizada la documentación técnica y funcional en el repositorio GitHub.
+- Definir indicadores de gestión (**KPIs**) y dar seguimiento a su cumplimiento.
+- Coordinar auditorías internas de seguridad, licenciamiento y trazabilidad de software.
+- Promover la mejora continua conectando los *Squads* de desarrollo con el equipo de operaciones.
 
 ---
 
-# 6. Relaciones entre Roles
-
+## 6. Relaciones entre Roles
 La interacción entre los diferentes actores se desarrolla de la siguiente manera:
 
-- El Director de Tecnologías de Información establece las políticas generales.
-- El Administrador del Laboratorio coordina la operación diaria.
-- El Responsable del Catálogo de Imágenes administra los entornos de desarrollo.
-- Los Docentes definen los requerimientos académicos.
-- El Equipo de Soporte Técnico atiende las incidencias.
-- Los Estudiantes utilizan los recursos siguiendo las políticas establecidas.
+- **El Director de Tecnologías de Información** establece las políticas generales y directrices estratégicas.
+- **El Administrador del Laboratorio** coordina la operación diaria física y el trabajo del soporte técnico.
+- **El Responsable del Catálogo de Imágenes** administra la plataforma Harbor y asegura la disponibilidad de entornos virtualizados.
+- **Los Docentes** definen los requerimientos académicos y alimentan el flujo de solicitudes de imágenes.
+- **El Equipo de Soporte Técnico** atiende las incidencias operativas en el sitio.
+- **El Chapter de Organización y Procesos** audita los flujos, evalúa métricas y actualiza las mejores prácticas.
+- **Los Estudiantes** consumen los recursos de forma autónoma respetando las políticas establecidas.
 
 Esta distribución permite mantener una adecuada separación entre responsabilidades estratégicas, tácticas y operativas.
 
 ---
 
-# 7. Beneficios de la Estructura Organizacional
-
+## 7. Beneficios de la Estructura Organizacional
 La implementación de esta estructura permite:
 
-- Mejor distribución de responsabilidades.
-- Mayor control sobre los recursos tecnológicos.
-- Disminución de tiempos de respuesta.
-- Mejor coordinación entre áreas.
-- Mayor trazabilidad de las actividades.
-- Facilita la implementación de procesos BPMN.
-- Favorece la mejora continua.
+- Mejor distribución y claridad de responsabilidades entre el personal técnico y docente.
+- Mayor control y seguridad sobre los recursos tecnológicos físicos y digitales.
+- Disminución de tiempos de respuesta en la configuración de entornos de aprendizaje.
+- Mejor coordinación entre las distintas áreas académicas y administrativas.
+- Mayor trazabilidad de las actividades, cambios de software e imágenes utilizadas.
+- Facilita la implementación y automatización de procesos BPMN.
+- Favorece la mejora continua mediante el análisis sistemático de indicadores.
