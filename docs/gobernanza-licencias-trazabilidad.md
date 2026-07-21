@@ -11,7 +11,7 @@ El presente documento analiza la necesidad de implementar **Gobernanza de Imáge
 
 ---
 
-## 1. Gobernanza de Imágenes Docker y Contenedores
+## 2. Gobernanza de Imágenes Docker y Contenedores
 
 La gobernanza de imágenes define el conjunto de reglas y políticas que aseguran que ningún contenedor inseguro o no autorizado llegue a producción.
 
@@ -20,7 +20,7 @@ La gobernanza de imágenes define el conjunto de reglas y políticas que asegura
 
 ---
 
-## 2. Gestión de Licencias de Software
+## 3. Gestión de Licencias de Software
 
 La gestión de licencias se enfoca en auditar y controlar el tipo de propiedad intelectual que incluyen las librerías de terceros empaquetadas en las aplicaciones.
 
@@ -29,7 +29,7 @@ La gestión de licencias se enfoca en auditar y controlar el tipo de propiedad i
 
 ---
 
-## 3. Trazabilidad del Software
+## 4. Trazabilidad del Software
 
 La trazabilidad es la capacidad de rastrear el origen exacto, las modificaciones, los responsables y la composición de cualquier artefacto desplegado.
 
@@ -38,7 +38,7 @@ La trazabilidad es la capacidad de rastrear el origen exacto, las modificaciones
 
 ---
 
-## 4. Conclusión y Valor en la Empresa de Software
+## 5. Conclusión y Valor en la Empresa de Software
 
 Evaluación general sobre la integración de estos tres pilares en el ciclo de vida del software.
 
