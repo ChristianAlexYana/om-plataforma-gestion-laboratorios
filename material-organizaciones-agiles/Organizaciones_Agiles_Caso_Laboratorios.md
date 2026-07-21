@@ -157,6 +157,23 @@ El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que Organi
 ## 9. Preguntas de discusión
 
 1. ¿Qué otros procesos del laboratorio caen en el dominio "complicado" (procedimiento claro) frente a los que caen en el dominio "complejo" (requieren experimentación)?
+
+- **Comentario (Mauro Snayder Sullca Mamani):** Los procesos complicados son los operativos e infraestructurales que cuentan con un procedimiento técnico claro y predecible —como el mantenimiento de hardware, el alta de inventario, la configuración de redes/impresoras o el control de acceso físico por código QR—, mientras que los procesos complejos son aquellos donde las necesidades cambian constantemente y requieren experimentar para encontrar la mejor solución, tales como la curaduría del catálogo de imágenes en Harbor, la automatización de actualizaciones de software sin romper proyectos activos, y el ajuste de políticas de seguridad al escalar del entorno universitario al empresarial.
+
+<br>
+
 2. Si el proyecto creciera a 10 squads, ¿en qué punto convendría dividir el Tribe "Platform Lab" en dos tribes independientes?
+
+- **Comentario (Mauro Snayder Sullca Mamani):** Considero que el punto de quiebre para dividir el Tribe ocurre cuando las dependencias entre los 10 squads comienzan a generar cuellos de botella y las reuniones de alineación se vuelven ineficientes, momento en el cual sugiero separar la organización en dos Tribes especializadas: una enfocada en la infraestructura y operación física del laboratorio ("Lab Operations & Infrastructure" para hardware, Proxmox y reservas) y otra dedicada exclusivamente al desarrollo de la plataforma de software y seguridad ("Developer Platform & Enterprise Security" para contenedores, pipelines CI/CD y políticas de compliance).
+
+<br>
+
 3. ¿Qué riesgos organizacionales aparecen si el rol de Process Owner dentro de cada squad no tiene tiempo protegido para documentar procesos?
+
+- **Comentario (Mauro Snayder Sullca Mamani):** Si como Process Owner no cuento con tiempo protegido para la documentación, el principal riesgo es la acumulación de "deuda de procesos" (process debt), lo que provocaría que el equipo priorice solo el código y genere un conocimiento informal que vive únicamente en las mentes de los desarrolladores; esto generaría silos de información y provocaría un colapso en la transferencia del proyecto al finalizar el semestre, obligando a los nuevos estudiantes a perder tiempo intentando descifrar cómo funciona la plataforma.
+
+<br>
+
 4. ¿Cómo mediría usted, con indicadores concretos, si el modelo está logrando el equilibrio entre autonomía y alineación?
+
+- **Comentario (Mauro Snayder Sullca Mamani):** Para medir este equilibrio evaluaría, por un lado, la autonomía mediante el Cycle Time (logrando que un squad publique cambios en Harbor en menos de 48 horas sin bloqueos entre equipos) y, por otro lado, la alineación midiendo el índice de compliance (asegurando que el 100% de las imágenes cumpla con los estándares del Chapter mediante escaneos de Trivy sin vulnerabilidades críticas y firmas de Cosign), garantizando así que los squads avancen rápido pero bajo un mismo marco de calidad.

@@ -305,6 +305,23 @@ El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que O&M, a
 ## Preguntas de discusión
 
 1. ¿Qué otros procesos del laboratorio son "complicados" (procedimiento claro) frente a los "complejos" (requieren experimentación)?
+
+- **Comentario (Mauro Snayder Sullca Mamani):** Como procesos complicados identifico el mantenimiento técnico de servidores y PCs, el etiquetado e inventariado de hardware, la configuración de redes VLAN y el control de acceso físico mediante código QR, ya que son tareas previsibles que requieren conocimiento experto y siguen procedimientos claros; mientras que como procesos complejos identifico el diseño de las políticas de actualización automática de contenedores sin romper proyectos activos, la gestión de licencias al pasar del entorno académico al empresarial y la definición del catálogo de imágenes oficiales en Harbor, puesto que involucran variables cambiantes que requieren experimentar, observar el uso de los estudiantes y adaptar el diseño continuamente.
+
+<br>
+
 2. Si el proyecto creciera a 10 squads, ¿en qué punto convendría dividir el Tribe "Platform Lab" en dos tribes independientes?
+
+- **Comentario (Mauro Snayder Sullca Mamani):** Considero que el punto idóneo para dividir el Tribe se alcanza cuando la coordinación de dependencias entre los 10 squads vuelve lentas las entregas y las reuniones de alineación pierden agilidad, por lo que convendría separar la estructura en dos Tribes especializadas según su dominio técnico: una enfocada en la infraestructura y operación física ("Lab Operations & Infrastructure", para hardware, Proxmox y reservas) y otra orientada al desarrollo de software y seguridad ("Developer Platform & Enterprise Security", para el catálogo de Harbor, pipelines CI/CD y gobernanza).
+
+<br>
+
 3. ¿Qué riesgos aparecen si el Process Owner de cada squad no tiene tiempo protegido para documentar procesos?
+
+- **Comentario (Mauro Snayder Sullca Mamani):** Si el Process Owner no dispone de tiempo protegido, el riesgo principal es generar una alta "deuda de procesos" (process debt), donde el equipo prioriza únicamente la escritura de código dejando la documentación obsoleta o informal, lo que crea silos de conocimiento que imposibilitan la transferencia del proyecto entre semestres y obliga a los nuevos estudiantes a perder tiempo tratando de entender cómo funciona la plataforma.
+
+<br>
+
 4. ¿Cómo mediría, con indicadores concretos, si el modelo logra el equilibrio entre autonomía y alineación?
+
+- **Comentario (Mauro Snayder Sullca Mamani):** Para medir este equilibrio evaluaría la autonomía mediante el Cycle Time de despliegue (logrando que un squad publique una nueva versión o imagen en Harbor en menos de 48 horas sin depender de aprobaciones externas) y la alineación a través de la Tasa de Cumplimiento (Compliance Rate), garantizando que el 100% de los contenedores cuenten con su inventario SBOM, pasen los escaneos de vulnerabilidades con Trivy y estén firmados digitalmente con Cosign según los estándares del Chapter.
