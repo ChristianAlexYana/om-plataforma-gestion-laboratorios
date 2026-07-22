@@ -309,6 +309,8 @@ El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que O&M, a
 - **Comentario (Emanuel David Hilacondo Begazo):** Lo complicado abarca tareas operativas previsibles, como la asignación algorítmica de horarios. Lo complejo es diseñar la interfaz de usuario; lograr una plataforma intuitiva exige iterar y evaluar los flujos bajo criterios de usabilidad (Nielsen/ISO) basándose en la interacción real de la comunidad.
 
 - **Comentario de Rodrigo Estefanero:** Lo complicado es el aprovisionamiento de la infraestructura base, como levantar los nodos en Proxmox o configurar las redes estáticas. Lo verdaderamente complejo es lograr la adopción cultural de DevSecOps por parte de los usuarios y definir políticas de seguridad dinámicas que protejan el entorno sin bloquear la agilidad de los pases a producción. Eso requiere iteración continua.
+
+- **Comentario de Renzo Geomar Mamani Quispe:** Desde la perspectiva de la ingeniería de sistemas, clasificaría como "complicado" el aprovisionamiento de las terminales físicas con entornos Ubuntu Linux o la preconfiguración de simuladores de hardware como Tinkercad para los cursos de electrónica; son labores que exigen rigor técnico, pero siguen un script reproducible. En cambio, catalogaría como "complejo" la gestión dinámica de recursos del servidor cuando decenas de estudiantes compilan simultáneamente algoritmos pesados en C++ o Java. No hay una fórmula estática para predecir esos picos de CPU; requiere observar los cuellos de botella en tiempo real, experimentar con límites de contenedores y adaptar la arquitectura sobre la marcha.
 <br>
 
 2. Si el proyecto creciera a 10 squads, ¿en qué punto convendría dividir el Tribe "Platform Lab" en dos tribes independientes?
@@ -320,6 +322,8 @@ El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que O&M, a
 - **Comentario (Emanuel David Hilacondo Begazo):** La dividiría cuando las dependencias técnicas generen cuellos de botella que paralicen la entrega continua. Sugiero separarla por flujos de valor: una Tribu para la experiencia del entorno universitario y otra exclusiva para infraestructura central e integraciones empresariales.
 
 - **Comentario de Rodrigo Estefanero:** El síntoma inequívoco para dividir es el deterioro del Time-to-Market. Cuando las dependencias cruzadas provocan que coordinar tome más tiempo que programar, se debe separar. Apoyo la división por flujo de valor: una Tribu enfocada en la velocidad y experimentación del entorno Universitario, y otra dedicada a la estabilidad, seguridad estricta y cumplimiento de SLAs del entorno Enterprise.
+
+- **Comentario de Renzo Geomar Mamani Quispe:** Aplicando principios de arquitectura de sistemas, el punto de quiebre para dividir la tribu ocurre cuando el nivel de acoplamiento entre equipos paraliza el desarrollo. Si un *squad* no puede actualizar un servicio sin romper la integración con otro, la tribu se vuelve inmanejable. Llegado a ese límite de carga cognitiva, mi propuesta es separar la estructura: un Tribe de "Infraestructura Base" enfocado netamente en el bajo nivel (virtualización, redes, hardware y terminales) y un Tribe de "Servicios de Plataforma" dedicado a la capa de aplicación, flujos de usuarios e integraciones del catálogo de imágenes.
 
 <br>
 
@@ -333,6 +337,8 @@ El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que O&M, a
 
 - **Comentario de Rodrigo Estefanero:** Crea un cuello de botella operativo y un riesgo crítico de auditoría. Si los procesos no se documentan, no se pueden automatizar. En un entorno empresarial, esta falta de estándares documentados dispara el MTTR (Tiempo Medio de Recuperación) ante un incidente, ya que la resolución dependerá de la memoria de los desarrolladores y no de procedimientos auditables.
 
+- **Comentario de Renzo Geomar Mamani Quispe:** El riesgo más crítico es la creación de "cajas negras" dentro de nuestra infraestructura. Si el *Process Owner* no cuenta con tiempo para documentar, las configuraciones del sistema, los *scripts* de automatización o las reglas de despliegue quedan atrapadas como conocimiento empírico de unos pocos. A nivel de ingeniería, esto destruye por completo la reproducibilidad. Ante una caída de los servicios o la rotación natural de estudiantes al final del semestre académico, la ausencia de *runbooks* operativos convierte un incidente menor en un bloqueo total, imposibilitando la escalabilidad del laboratorio.
+
 <br>
 
 4. ¿Cómo mediría, con indicadores concretos, si el modelo logra el equilibrio entre autonomía y alineación?
@@ -344,4 +350,6 @@ El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que O&M, a
 - **Comentario (Emanuel David Hilacondo Begazo):** Mediría la autonomía con el Tiempo de Ciclo (Cycle Time) para evaluar qué tan rápido un Squad integra código por sí solo. La alineación la auditaría con un Índice de Cumplimiento, asegurando que todas las entregas aprueben los estándares de seguridad y marcos de usabilidad del Chapter.
 
 - **Comentario de Rodrigo Esteafanero:** Me basaría estrictamente en las métricas DORA. La autonomía se demuestra con una alta Frecuencia de Despliegue (Deployment Frequency) y un Lead Time corto. La alineación se confirma manteniendo una Tasa de Fallos por Cambios (Change Failure Rate) mínima; esto prueba que los equipos liberan valor rápidamente, pero respetando los estándares técnicos y de seguridad exigidos por su Chapter.
+
+- **Comentario de Renzo Geomar Mamani Quispe:** Para medir este equilibrio de manera objetiva, cruzaría dos métricas directas del flujo de ingeniería. La autonomía la evaluaría midiendo el *Lead Time for Changes*, calculando el tiempo exacto que tarda un *squad* desde la validación del código hasta que la funcionalidad está operando en el laboratorio de forma independiente. La alineación la validaría a través de la Tasa de Éxito en Integración Continua (*CI Success Rate*), verificando qué porcentaje de esos pases a producción cumple automáticamente con las estrictas políticas de arquitectura y seguridad dictadas por su *Chapter*, sin requerir parches manuales.
 
