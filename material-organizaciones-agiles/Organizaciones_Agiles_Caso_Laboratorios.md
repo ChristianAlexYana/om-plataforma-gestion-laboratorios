@@ -165,7 +165,7 @@ El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que Organi
 - **Comentario (Christian Yana):** Buena distinción. Propongo añadir una frase breve que diferencie "complicado" (procedimiento reproducible) de "complejo" (requiere experimentación) y un checklist de 3 ítems para clasificar procesos en la práctica.
 
 - **Comentario (Emanuel David Hilacondo Begazo):** Considero que un proceso "complicado" sería el modelado analítico para la asignación óptima de horarios y recursos físicos, ya que requiere conocimiento experto en investigación de operaciones, pero tiene una solución calculable. En contraste, un proceso "complejo" es el diseño de la interfaz de usuario; aunque apliquemos heurísticas de usabilidad estandarizadas, lograr que toda la comunidad adopte el sistema requiere prototipado constante, evaluación de los patrones de interacción y adaptación continua basada en el comportamiento real de los usuarios.
-- 
+  
 <br>
 
 2. Si el proyecto creciera a 10 squads, ¿en qué punto convendría dividir el Tribe "Platform Lab" en dos tribes independientes?
@@ -177,7 +177,7 @@ El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que Organi
 - **Comentario (Christian Yana):** Propongo un umbral práctico: considerar dividir cuando haya más de 8 squads o cuando más del 20% de las historias impliquen dependencias cruzadas que aumenten la coordinación; priorizar la separación por flujo de valor (Académico vs. Empresarial).
 
 - **Comentario (Emanuel David Hilacondo Begazo):** Desde mi perspectiva, el punto crítico se alcanza cuando la complejidad técnica frena la entrega de valor y el diseño de la plataforma pierde coherencia global. Al llegar a ese límite operativo, sugiero separar la organización en una Tribu enfocada estrictamente en la infraestructura y operaciones híbridas, y otra dedicada puramente al desarrollo de software, la experiencia de usuario y la automatización inteligente.
-- 
+  
 <br>
 
 3. ¿Qué riesgos organizacionales aparecen si el rol de Process Owner dentro de cada squad no tiene tiempo protegido para documentar procesos?
