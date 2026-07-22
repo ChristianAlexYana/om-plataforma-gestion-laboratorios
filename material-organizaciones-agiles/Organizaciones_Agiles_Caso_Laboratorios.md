@@ -8,9 +8,9 @@ Curso de Organización y Métodos · Julio 2026
 
 ## 1. Introducción
 
-La disciplina de Organización y Métodos (O&M) estudia cómo diseñar estructuras, procesos y flujos de trabajo que permitan a una institución cumplir sus objetivos de forma eficiente. Durante décadas, ese diseño se apoyó en organigramas jerárquicos, manuales de procedimientos estáticos y una separación clara entre quien planifica y quien ejecuta. Ese enfoque funciona razonablemente bien cuando el problema a resolver es estable, repetitivo y predecible.
+La disciplina de Organización y Métodos (O&M) estudia cómo diseñar estructuras, procesos y flujos de trabajo que permitan a una institución cumplir sus objetivos de forma eficiente. Durante d[...]
 
-El presente material aborda un escenario distinto: el diseño organizacional para problemas complejos, es decir, problemas con múltiples partes interesadas, tecnología cambiante, requisitos que emergen sobre la marcha y alta incertidumbre. Para este tipo de problemas, las organizaciones ágiles —y en particular el Modelo Spotify— ofrecen un marco de diseño organizacional alternativo. Se utiliza como hilo conductor un caso real: el proyecto de una Plataforma Híbrida de Gestión de Laboratorios de Computación, que aplica precisamente este modelo.
+El presente material aborda un escenario distinto: el diseño organizacional para problemas complejos, es decir, problemas con múltiples partes interesadas, tecnología cambiante, requisitos que [...]
 
 ---
 
@@ -18,7 +18,7 @@ El presente material aborda un escenario distinto: el diseño organizacional par
 
 ### 2.1 El entorno VUCA
 
-La sigla VUCA (Volatility, Uncertainty, Complexity, Ambiguity) describe entornos donde el cambio es rápido y difícil de anticipar (volatilidad), la información disponible es insuficiente para predecir resultados (incertidumbre), existen múltiples variables interconectadas (complejidad) y las relaciones causa-efecto no son claras (ambigüedad). La mayoría de los proyectos tecnológicos actuales —desarrollo de plataformas, transformación digital, integración de sistemas— se desenvuelven en este tipo de entorno.
+La sigla VUCA (Volatility, Uncertainty, Complexity, Ambiguity) describe entornos donde el cambio es rápido y difícil de anticipar (volatilidad), la información disponible es insuficiente para p[...]
 
 ### 2.2 El marco Cynefin: distinguir tipos de problema
 
@@ -26,46 +26,46 @@ El marco Cynefin, desarrollado por Dave Snowden, clasifica los problemas en cuat
 
 - **Simple (claro):** relación causa-efecto evidente. Se resuelve con procedimientos estandarizados y buenas prácticas. Ejemplo: check-in de un equipo en el inventario.
 - **Complicado:** requiere conocimiento experto para identificar la solución, pero es analizable. Ejemplo: configurar una red o un clúster de Kubernetes.
-- **Complejo:** la relación causa-efecto solo se comprende en retrospectiva; no hay una única solución correcta de antemano. Requiere experimentar, observar y adaptar ("probar-sentir-responder"). Ejemplo: diseñar un catálogo de imágenes de contenedores que satisfaga a la vez a estudiantes, docentes y empresas.
+- **Complejo:** la relación causa-efecto solo se comprende en retrospectiva; no hay una única solución correcta de antemano. Requiere experimentar, observar y adaptar ("probar-sentir-responder")[...]
 - **Caótico:** no hay relación causa-efecto discernible; se requiere actuar primero para estabilizar la situación. Ejemplo: una caída total del laboratorio en plena evaluación.
 
-> **Idea central:** los problemas complejos no se resuelven con más planificación anticipada, sino con estructuras organizacionales que permitan experimentar rápido, aprender del error y ajustar el rumbo con frecuencia.
+> **Idea central:** los problemas complejos no se resuelven con más planificación anticipada, sino con estructuras organizacionales que permitan experimentar rápido, aprender del error y ajusta[...]
 
-Una organización jerárquica clásica —con aprobaciones en cascada y especialización rígida por departamento— es eficiente para lo simple y lo complicado, pero se vuelve lenta y frágil frente a lo complejo: cada cambio de requisito debe atravesar varios niveles de aprobación, y el conocimiento queda fragmentado entre silos que no se comunican con fluidez.
+Una organización jerárquica clásica —con aprobaciones en cascada y especialización rígida por departamento— es eficiente para lo simple y lo complicado, pero se vuelve lenta y frágil fre[...]
 
 ---
 
 ## 3. Agilidad organizacional (más allá del equipo)
 
-La agilidad organizacional traslada los principios ágiles —iteración corta, entrega incremental, retroalimentación continua, autonomía del equipo— desde el nivel de un solo equipo de desarrollo hacia el diseño de la organización completa. No se trata solo de que un equipo use Scrum o Kanban, sino de repensar cómo se agrupan las personas, cómo fluye la autoridad y cómo se coordinan múltiples equipos que trabajan en un mismo problema complejo.
+La agilidad organizacional traslada los principios ágiles —iteración corta, entrega incremental, retroalimentación continua, autonomía del equipo— desde el nivel de un solo equipo de desar[...]
 
 ### 3.1 El equilibrio entre autonomía y alineación
 
-El reto central del diseño organizacional ágil es lograr que los equipos tengan autonomía suficiente para decidir cómo resolver un problema (sin esperar aprobaciones de arriba hacia abajo para cada decisión técnica), y al mismo tiempo mantengan alineación con los objetivos estratégicos de la organización, evitando que cada equipo tome direcciones contradictorias entre sí.
+El reto central del diseño organizacional ágil es lograr que los equipos tengan autonomía suficiente para decidir cómo resolver un problema (sin esperar aprobaciones de arriba hacia abajo para[...]
 
-Cuando la autonomía es alta pero la alineación es baja, el resultado es caos: equipos desconectados, duplicación de esfuerzo, inconsistencias. Cuando la alineación es alta pero la autonomía es baja, el resultado es una burocracia lenta que no logra adaptarse a la complejidad del problema. El diseño organizacional ágil busca maximizar ambas dimensiones a la vez.
+Cuando la autonomía es alta pero la alineación es baja, el resultado es caos: equipos desconectados, duplicación de esfuerzo, inconsistencias. Cuando la alineación es alta pero la autonomía e[...]
 
 ---
 
 ## 4. El Modelo Spotify
 
-El Modelo Spotify es un patrón de diseño organizacional que la empresa Spotify popularizó (aunque la propia compañía aclara que evolucionó y nunca fue un modelo "cerrado") para escalar equipos ágiles manteniendo autonomía y alineación. Se estructura en cuatro unidades:
+El Modelo Spotify es un patrón de diseño organizacional que la empresa Spotify popularizó (aunque la propia compañía aclara que evolucionó y nunca fue un modelo "cerrado") para escalar equip[...]
 
 ### 4.1 Squad
 
-Es la unidad básica: un equipo pequeño, multidisciplinario (5-9 personas) y autónomo, con todas las competencias necesarias para diseñar, construir y entregar una parte del producto de principio a fin, con mínima dependencia de otros equipos. Cada squad tiene una misión clara y actúa casi como una "mini-startup" dentro de la organización.
+Es la unidad básica: un equipo pequeño, multidisciplinario (5-9 personas) y autónomo, con todas las competencias necesarias para diseñar, construir y entregar una parte del producto de princip[...]
 
 ### 4.2 Tribe
 
-Agrupa varios squads que trabajan en un área de producto relacionada (por ejemplo, toda la plataforma de un mismo proyecto). El tribe coordina la visión general y evita que los squads dupliquen esfuerzos o pierdan coherencia entre sí.
+Agrupa varios squads que trabajan en un área de producto relacionada (por ejemplo, toda la plataforma de un mismo proyecto). El tribe coordina la visión general y evita que los squads dupliquen [...]
 
 ### 4.3 Chapter
 
-Es la agrupación transversal de personas que comparten la misma disciplina o especialidad (por ejemplo, todos los desarrolladores backend, aunque estén repartidos en distintos squads). El chapter garantiza estándares técnicos comunes, mentoría y desarrollo profesional dentro de la disciplina, sin frenar la autonomía diaria del squad.
+Es la agrupación transversal de personas que comparten la misma disciplina o especialidad (por ejemplo, todos los desarrolladores backend, aunque estén repartidos en distintos squads). El chapte[...]
 
 ### 4.4 Guild
 
-Es una comunidad de interés informal y voluntaria que cruza toda la organización (por ejemplo, un guild de seguridad o de accesibilidad), abierta a cualquiera interesado en el tema, independientemente de su squad, tribe o chapter. Sirve para compartir conocimiento de forma orgánica.
+Es una comunidad de interés informal y voluntaria que cruza toda la organización (por ejemplo, un guild de seguridad o de accesibilidad), abierta a cualquiera interesado en el tema, independient[...]
 
 | Unidad | Tipo de agrupación | Propósito principal |
 |---|---|---|
@@ -74,7 +74,7 @@ Es una comunidad de interés informal y voluntaria que cruza toda la organizaci�
 | Chapter | Por disciplina/especialidad técnica | Estandarizar calidad técnica y desarrollo profesional |
 | Guild | Comunidad de interés voluntaria | Compartir conocimiento transversal |
 
-*El resultado es una matriz: cada persona pertenece "verticalmente" a un squad (donde entrega valor día a día) y "horizontalmente" a un chapter (donde mantiene su desarrollo técnico), y opcionalmente participa en guilds temáticos.*
+*El resultado es una matriz: cada persona pertenece "verticalmente" a un squad (donde entrega valor día a día) y "horizontalmente" a un chapter (donde mantiene su desarrollo técnico), y opciona[...]
 
 ---
 
@@ -91,13 +91,13 @@ Es una comunidad de interés informal y voluntaria que cruza toda la organizaci�
 
 ### 6.1 El problema
 
-Los laboratorios de computación universitarios y las empresas de software comparten un mismo dolor: gestión fragmentada de recursos físicos y digitales, tiempo perdido en instalaciones manuales, entornos no estandarizados ("funciona en mi máquina"), falta de trazabilidad del software utilizado, y dificultad para que un estudiante replique en su propia computadora el mismo entorno del laboratorio.
+Los laboratorios de computación universitarios y las empresas de software comparten un mismo dolor: gestión fragmentada de recursos físicos y digitales, tiempo perdido en instalaciones manuales[...]
 
-El proyecto propone una plataforma híbrida (local + nube) que integre gestión de hardware, usuarios, proyectos/cursos, repositorios de código (GitLab) y un catálogo centralizado de imágenes de contenedores (Docker/Harbor), garantizando estandarización, trazabilidad y reproducibilidad.
+El proyecto propone una plataforma híbrida (local + nube) que integre gestión de hardware, usuarios, proyectos/cursos, repositorios de código (GitLab) y un catálogo centralizado de imágenes d[...]
 
 ### 6.2 ¿Por qué es un problema complejo (y no solo complicado)?
 
-Aplicando el marco Cynefin al caso: no existe una única arquitectura "correcta" conocida de antemano, porque las necesidades de un aula universitaria (bajo presupuesto, alta rotación de estudiantes) difieren de las de una empresa (seguridad, cumplimiento, SLAs). Los requisitos emergerán con el uso real, hay múltiples interesados con intereses distintos (estudiantes, docentes, administradores de TI, empresas) y la tecnología base (contenedores, Kubernetes, identidad, seguridad) evoluciona constantemente. Esto ubica al proyecto en el dominio complejo de Cynefin: se requiere experimentar con fases piloto, observar el uso real y adaptar el diseño, no un plan cerrado desde el inicio.
+Aplicando el marco Cynefin al caso: no existe una única arquitectura "correcta" conocida de antemano, porque las necesidades de un aula universitaria (bajo presupuesto, alta rotación de estudia[...]
 
 ### 6.3 Aplicación del Modelo Spotify: el Tribe "Platform Lab"
 
@@ -111,11 +111,11 @@ El proyecto organiza a los estudiantes y docentes bajo un Tribe único llamado "
 | Squad Frontend & User Experience | Squad Enterprise Experience & Analytics |
 | — | Squad Integration & Ecosystem |
 
-Cada squad es multidisciplinario y responsable de una porción vertical del producto (por ejemplo, el squad de imágenes cubre desde el diseño hasta la entrega del catálogo de contenedores), replicando el mismo principio de autonomía de punta a punta que define al Modelo Spotify.
+Cada squad es multidisciplinario y responsable de una porción vertical del producto (por ejemplo, el squad de imágenes cubre desde el diseño hasta la entrega del catálogo de contenedores), re[...]
 
 ### 6.4 Chapters liderados por docentes
 
-Los Chapters agrupan a los estudiantes por especialidad técnica, transversalmente a los squads, y están liderados por profesores con un mínimo de cinco años de experiencia en la industria, lo que aporta mentoría real y estándares profesionales:
+Los Chapters agrupan a los estudiantes por especialidad técnica, transversalmente a los squads, y están liderados por profesores con un mínimo de cinco años de experiencia en la industria, lo[...]
 
 - Chapter Backend & Arquitectura
 - Chapter DevOps & Platform Engineering
@@ -124,17 +124,17 @@ Los Chapters agrupan a los estudiantes por especialidad técnica, transversalmen
 
 ### 6.5 El dilema organizacional: ¿dónde ubicar la gestión de procesos?
 
-Durante la planificación del backlog surgió una pregunta típica del diseño organizacional ágil: los procesos administrativos del laboratorio (reserva de equipos, aprobación de imágenes, matriz RACI, indicadores de uso) ¿ameritan un squad propio? El equipo del proyecto descartó esa opción porque un squad dedicado solo a procesos generaría un silo desconectado de la ejecución técnica y sería costoso en recursos.
+Durante la planificación del backlog surgió una pregunta típica del diseño organizacional ágil: los procesos administrativos del laboratorio (reserva de equipos, aprobación de imágenes, ma[...]
 
-> **Solución adoptada:** un Chapter de "Organización y Procesos" liderado por un docente con experiencia en Gestión de Proyectos o ITIL, combinado con un rol de Process Owner (u "Organization Champion") dentro de cada squad, dedicado parcialmente a documentar los procesos de su propia área.
+> **Solución adoptada:** un Chapter de "Organización y Procesos" liderado por un docente con experiencia en Gestión de Proyectos o ITIL, combinado con un rol de Process Owner (u "Organization [...]
 
-Esta decisión ilustra en la práctica el principio de autonomía + alineación: cada squad sigue siendo dueño de sus procesos (autonomía), mientras el Chapter transversal garantiza una matriz RACI y estándares comunes (alineación), sin crear una estructura burocrática separada del trabajo técnico diario.
+Esta decisión ilustra en la práctica el principio de autonomía + alineación: cada squad sigue siendo dueño de sus procesos (autonomía), mientras el Chapter transversal garantiza una matriz [...]
 
 ### 6.6 Cadencia y artefactos ágiles del proyecto
 
 - Dedicación semanal: 15-20 horas/estudiante en la Fase 1 (Universitaria) y 20-25 horas/estudiante en la Fase 2 (Empresa).
 - Ritmo de coordinación: 2 reuniones de squad y 1 revisión con el Chapter (docente) por semana.
-- Backlog priorizado con MoSCoW (Must/Should/Could/Won't have), organizado en épicas: Organización y Procesos, Usuarios y Permisos, Catálogo de Imágenes, Hardware e Inventario, Frontend, Arquitectura base.
+- Backlog priorizado con MoSCoW (Must/Should/Could/Won't have), organizado en épicas: Organización y Procesos, Usuarios y Permisos, Catálogo de Imágenes, Hardware e Inventario, Frontend, Arqu[...]
 - Fases de implementación: Análisis y Diseño (1 mes) → Proyecto Universitario (4-6 meses) → Evolución a Proyecto Empresa (5-7 meses) → Piloto → Mejora continua.
 
 ---
@@ -142,15 +142,15 @@ Esta decisión ilustra en la práctica el principio de autonomía + alineación:
 ## 7. Lecciones para el diseño organizacional
 
 - La estructura debe reflejar el tipo de problema: procesos simples/complicados admiten jerarquía y procedimiento; problemas complejos requieren squads autónomos que aprendan iterando.
-- La agilidad organizacional no elimina la necesidad de coordinación: los Chapters y la matriz RACI muestran que "ágil" no significa "sin estructura", sino una estructura distinta, orientada a autonomía con alineación.
-- Los dilemas organizacionales (como "¿dónde va Organización y Procesos?") rara vez se resuelven creando más unidades separadas; con frecuencia la mejor respuesta es un rol transversal combinado con una responsabilidad distribuida dentro de cada equipo.
-- Un mismo diseño organizacional (Tribe → Squads → Chapters) puede evolucionar de un contexto académico a uno empresarial simplemente ajustando el número y enfoque de los squads, sin rediseñar el modelo desde cero.
+- La agilidad organizacional no elimina la necesidad de coordinación: los Chapters y la matriz RACI muestran que "ágil" no significa "sin estructura", sino una estructura distinta, orientada a [...]
+- Los dilemas organizacionales (como "¿dónde va Organización y Procesos?") rara vez se resuelven creando más unidades separadas; con frecuencia la mejor respuesta es un rol transversal combin[...]
+- Un mismo diseño organizacional (Tribe → Squads → Chapters) puede evolucionar de un contexto académico a uno empresarial simplemente ajustando el número y enfoque de los squads, sin redis[...]
 
 ---
 
 ## 8. Conclusiones
 
-El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que Organización y Métodos, aplicada a problemas complejos, no consiste en imponer un procedimiento fijo sino en diseñar una estructura —el Modelo Spotify, en este ejemplo— que permita a equipos autónomos aprender, adaptarse y coordinarse con el resto de la organización. Para el estudiante de O&M, el valor del caso está en observar cómo una decisión organizacional concreta (dónde ubicar el Chapter de Organización y Procesos) se deriva directamente de los principios teóricos de autonomía, alineación y del dominio "complejo" del marco Cynefin.
+El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que Organización y Métodos, aplicada a problemas complejos, no consiste en imponer un procedimiento fijo sino en diseñar u[...]
 
 ---
 
@@ -159,29 +159,39 @@ El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que Organi
 1. ¿Qué otros procesos del laboratorio caen en el dominio "complicado" (procedimiento claro) frente a los que caen en el dominio "complejo" (requieren experimentación)?
 
 - **Comentario (Mauro Snayder Sullca Mamani):** Los procesos complicados son los operativos e infraestructurales que cuentan con un procedimiento técnico claro y predecible —como el mantenimiento de hardware, el alta de inventario, la configuración de redes/impresoras o el control de acceso físico por código QR—, mientras que los procesos complejos son aquellos donde las necesidades cambian constantemente y requieren experimentar para encontrar la mejor solución, tales como la curaduría del catálogo de imágenes en Harbor, la automatización de actualizaciones de software sin romper proyectos activos, y el ajuste de políticas de seguridad al escalar del entorno universitario al empresarial.
-- Comentario de Rodrigo:
-Lo complicado suele ser lo netamente técnico pero predecible, como configurar la red híbrida o establecer los pipelines de despliegue iniciales. Lo complejo, en mi experiencia, recae en la adopción del producto y el soporte técnico; por ejemplo, entender por qué un grupo de estudiantes no adopta la plataforma o cómo reaccionar en tiempo real ante un incidente de seguridad crítico en un entorno corporativo, donde no hay manuales estrictos y toca adaptarse sobre la marcha.
+
+- **Comentario (Rodrigo Estefanero):** Lo complicado suele ser lo netamente técnico pero predecible, como configurar la red híbrida o establecer los pipelines de despliegue iniciales. Lo complejo, en mi experiencia, recae en la adopción del producto y el soporte técnico; por ejemplo, entender por qué un grupo de estudiantes no adopta la plataforma o cómo reaccionar en tiempo real ante un incidente de seguridad crítico en un entorno corporativo, donde no hay manuales estrictos y toca adaptarse sobre la marcha.
+
+- **Comentario (Christian Yana):** Buena distinción. Propongo añadir una frase breve que diferencie "complicado" (procedimiento reproducible) de "complejo" (requiere experimentación) y un checklist de 3 ítems para clasificar procesos en la práctica.
 
 <br>
 
 2. Si el proyecto creciera a 10 squads, ¿en qué punto convendría dividir el Tribe "Platform Lab" en dos tribes independientes?
 
 - **Comentario (Mauro Snayder Sullca Mamani):** Considero que el punto de quiebre para dividir el Tribe ocurre cuando las dependencias entre los 10 squads comienzan a generar cuellos de botella y las reuniones de alineación se vuelven ineficientes, momento en el cual sugiero separar la organización en dos Tribes especializadas: una enfocada en la infraestructura y operación física del laboratorio ("Lab Operations & Infrastructure" para hardware, Proxmox y reservas) y otra dedicada exclusivamente al desarrollo de la plataforma de software y seguridad ("Developer Platform & Enterprise Security" para contenedores, pipelines CI/CD y políticas de compliance).
-- Comentario de Rodrigo:
-Yo dividiría la Tribu en el momento en que la carga cognitiva empiece a afectar la agilidad general y nuestro tiempo de entrega (Time-to-Market) se dispare por exceso de reuniones. En lugar de separarlo por capas de infraestructura, propondría una división basada en el flujo de valor: una Tribu enfocada al 100% en la experiencia y agilidad del entorno Universitario, y otra dedicada puramente a los SLAs, seguridad y requerimientos rígidos del entorno Corporativo (Enterprise).
+
+- **Comentario (Rodrigo Estefanero):** Yo dividiría la Tribu en el momento en que la carga cognitiva empiece a afectar la agilidad general y nuestro tiempo de entrega (Time-to-Market) se dispare por exceso de reuniones. En lugar de separarlo por capas de infraestructura, propondría una división basada en el flujo de valor: una Tribu enfocada al 100% en la experiencia y agilidad del entorno Universitario, y otra dedicada puramente a los SLAs, seguridad y requerimientos rígidos del entorno Corporativo (Enterprise).
+
+- **Comentario (Christian Yana):** Propongo un umbral práctico: considerar dividir cuando haya más de 8 squads o cuando más del 20% de las historias impliquen dependencias cruzadas que aumenten la coordinación; priorizar la separación por flujo de valor (Académico vs. Empresarial).
 
 <br>
 
 3. ¿Qué riesgos organizacionales aparecen si el rol de Process Owner dentro de cada squad no tiene tiempo protegido para documentar procesos?
 
 - **Comentario (Mauro Snayder Sullca Mamani):** Si como Process Owner no cuento con tiempo protegido para la documentación, el principal riesgo es la acumulación de "deuda de procesos" (process debt), lo que provocaría que el equipo priorice solo el código y genere un conocimiento informal que vive únicamente en las mentes de los desarrolladores; esto generaría silos de información y provocaría un colapso en la transferencia del proyecto al finalizar el semestre, obligando a los nuevos estudiantes a perder tiempo intentando descifrar cómo funciona la plataforma.
-- Comentario de Rodrigo:
-El riesgo inmediato es perder la trazabilidad operativa y fallar en posibles auditorías de calidad. Desde un enfoque DevSecOps, un proceso no documentado es un proceso inauditable y un cuello de botella en potencia. Si no hay estándares escritos, no podremos automatizar tareas a futuro, lo que ralentizará dramáticamente nuestra capacidad de respuesta ante incidentes (MTTR) cuando el proyecto escale a empresas.
+
+- **Comentario (Rodrigo Estefanero):** El riesgo inmediato es perder la trazabilidad operativa y fallar en posibles auditorías de calidad. Desde un enfoque DevSecOps, un proceso no documentado es un proceso inauditable y un cuello de botella en potencia. Si no hay estándares escritos, no podremos automatizar tareas a futuro, lo que ralentizará dramáticamente nuestra capacidad de respuesta ante incidentes (MTTR) cuando el proyecto escale a empresas.
+
+- **Comentario (Christian Yana):** Sugiero reservar 1 día a la semana (≈20% del tiempo) para que el Process Owner documente procesos y mantener un runbook mínimo por proceso; además, medir el % de procesos con runbook y owner asignado como KPI.
 
 <br>
 
 4. ¿Cómo mediría usted, con indicadores concretos, si el modelo está logrando el equilibrio entre autonomía y alineación?
 
 - **Comentario (Mauro Snayder Sullca Mamani):** Para medir este equilibrio evaluaría, por un lado, la autonomía mediante el Cycle Time (logrando que un squad publique cambios en Harbor en menos de 48 horas sin bloqueos entre equipos) y, por otro lado, la alineación midiendo el índice de compliance (asegurando que el 100% de las imágenes cumpla con los estándares del Chapter mediante escaneos de Trivy sin vulnerabilidades críticas y firmas de Cosign), garantizando así que los squads avancen rápido pero bajo un mismo marco de calidad.
-- Comentario de Rodrigo:
-Me apoyaría directamente en las métricas DORA. La autonomía la evidenciaría con una alta Frecuencia de Despliegue (Deployment Frequency), comprobando que los equipos pueden lanzar valor a producción sin depender de otros. La alineación la controlaría con la Tasa de Fallos (Change Failure Rate); si los equipos son verdaderamente autónomos pero respetan los estándares técnicos definidos por su Chapter, la innovación será constante pero la tasa de errores se mantendrá al mínimo.
+
+- **Comentario (Rodrigo Estefanero):** Me apoyaría directamente en las métricas DORA. La autonomía la evidenciaría con una alta Frecuencia de Despliegue (Deployment Frequency), comprobando que los equipos pueden lanzar valor a producción sin depender de otros. La alineación la controlaría con la Tasa de Fallos (Change Failure Rate); si los equipos son verdaderamente autónomos pero respetan los estándares técnicos definidos por su Chapter, la innovación será constante pero la tasa de errores se mantendrá al mínimo.
+
+- **Comentario (Christian Yana):** Para empezar, propongo 3 KPIs sencillos: Cycle Time de publicación en Harbor, MTTR y % de imágenes con SBOM y firma. Revisar estas métricas trimestralmente y ajustar metas.
+
+
