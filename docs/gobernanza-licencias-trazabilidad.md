@@ -5,9 +5,9 @@
 ## 1. Introducción
 
 
-En el desarrollo de software moderno, el uso de contenedores (Docker/Podman) se ha convertido en el estándar de facto para empaquetar y desplegar aplicaciones. Sin embargo, en un entorno empresarial[...] 
+En el desarrollo de software moderno, el uso de contenedores (Docker/Podman) se ha convertido en el estándar de facto para empaquetar y desplegar aplicaciones. Sin embargo, en un entorno empresarial, desplegar contenedores sin controles estrictos genera altos riesgos de seguridad, sanciones legales por incumplimiento de licencias y pérdida de control sobre la infraestructura.
 
-El presente documento analiza la necesidad de implementar **Gobernanza de Imágenes**, **Gestión de Licencias** y **Trazabilidad de Extremo a Extremo (End-to-End)**, conectando las prácticas del[...] 
+El presente documento analiza la necesidad de implementar **Gobernanza de Imágenes**, **Gestión de Licencias** y **Trazabilidad de Extremo a Extremo (End-to-End)**, conectando las prácticas del laboratorio universitario con las exigencias del entorno corporativo.
 
 ---
 
