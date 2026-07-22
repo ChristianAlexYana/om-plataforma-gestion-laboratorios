@@ -68,6 +68,7 @@ Para que este plan funcione bien, conviene que el equipo:
 
 ## Resumen corto
 En este proyecto, el plan de dedicación semanal busca asegurar un ritmo constante de trabajo: suficiente para avanzar de forma seria, pero sin caer en sobrecarga. Para el entorno universitario se propone una dedicación moderada, y para el empresarial una más intensa, con pocas reuniones pero bien enfocadas.
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/c70071a3-4889-4e63-aaec-6e51ce2ad740" />
 
 
 > **Comentario de Rodrigo Estefanero:**
