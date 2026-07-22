@@ -24,6 +24,9 @@ La gobernanza de imágenes define el conjunto de reglas y políticas que asegura
 > **Comentario (Christian Yana):**
 > Buen aporte en los principios de gobernanza y trazabilidad. Se recomienda añadir un ejemplo práctico de metadatos mínimos que se deben registrar por imagen (p. ej. autor, versión, origen/fuente, hash, resultado del escaneo, fecha de firma) y una plantilla corta de validación de licencias indicando: quién valida la compatibilidad, qué evidencias se almacenan y dónde se guardan (p. ej. MinIO / issue vinculado). Proponer también que el Responsable del Catálogo sea el owner de esa plantilla facilitará la trazabilidad operativa.
 
+> **Comentario Emanuel David Hilacondo Begazo:**
+> Complementando lo mencionado, considero que el éxito de la gobernanza radica en la usabilidad del sistema para los desarrolladores. Si los flujos de validación de imágenes son complejos o poco intuitivos, los equipos buscarán formas de evadirlos. Aplicar un diseño centrado en flujos de trabajo eficientes para las herramientas internas garantiza que los estándares de seguridad se cumplan de manera natural y sin fricciones operativas.
+
 ---
 
 ## 3. Gestión de Licencias de Software
@@ -38,6 +41,9 @@ La gestión de licencias se enfoca en auditar y controlar el tipo de propiedad i
 
 > **Comentario (Christian Yana):**
 > Sería útil añadir una sección con pasos mínimos de validación de licencias (por ejemplo: 1) identificar paquetes y licencias; 2) verificar compatibilidad con la política institucional; 3) documentar la evidencia en el issue de solicitud). Incluir un pequeño checklist facilitará las revisiones legales y reducirá riesgos en la publicación de imágenes.
+
+> **Comentario Emanuel David Hilacondo Begazo:**
+> Concuerdo totalmente. Analizar repositorios de código abierto para seleccionar un framework de desarrollo requiere una verificación exhaustiva de cumplimiento y compatibilidad con licencias como MIT o GPL. Integrar este nivel de análisis directamente en el flujo de trabajo asegura que no haya conflictos legales al incorporar líneas de código o arquitecturas de terceros, protegiendo así la viabilidad del software.
 
 ---
 
@@ -54,6 +60,9 @@ La trazabilidad es la capacidad de rastrear el origen exacto, las modificaciones
 > **Comentario (Christian Yana):**
 > Se sugiere definir de forma explícita los metadatos y artefactos mínimos que se conservarán por imagen (p. ej. enlace a commit, Dockerfile, reporte de escaneo, firma, notas de prueba). También es recomendable establecer un repositorio centralizado de evidencias (MinIO o carpeta protegida) y un procedimiento para vincular esos artefactos al issue de la solicitud.
 
+> **Comentario Emanuel David Hilacondo Begazo:**
+> La trazabilidad también actúa como un mapa detallado de nuestras dependencias. Al desarrollar aplicaciones que integran múltiples librerías complejas y componentes programáticos, mantener un registro exacto de las versiones utilizadas en cada imagen permite aislar fallos rápidamente y optimizar el sistema sin comprometer la integridad de la arquitectura general.
+
 ---
 
 ## 5. Conclusión y Valor en la Empresa de Software
@@ -68,3 +77,6 @@ Evaluación general sobre la integración de estos tres pilares en el ciclo de v
 
 > **Comentario (Christian Yana):**
 > Se propone que, como próximo paso, el equipo elabore un anexo operativo con la plantilla de metadatos y la plantilla de validación de licencias mencionadas arriba, y que se asigne un owner para la verificación periódica de cumplimiento.
+
+> **Comentario Emanuel David Hilacondo Begazo:**
+> En síntesis, la consolidación de estos tres pilares proporciona una arquitectura tecnológica robusta y confiable. Esto no solo estandariza los procesos internos, sino que garantiza que cada proyecto mantenga un nivel de integridad estructural, operativa y legal indispensable para un despliegue exitoso.
