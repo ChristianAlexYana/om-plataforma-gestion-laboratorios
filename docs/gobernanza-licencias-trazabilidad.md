@@ -27,6 +27,11 @@ La gobernanza de imágenes define el conjunto de reglas y políticas que asegura
 > **Comentario Emanuel David Hilacondo Begazo:**
 > Complementando lo mencionado, considero que el éxito de la gobernanza radica en la usabilidad del sistema para los desarrolladores. Si los flujos de validación de imágenes son complejos o poco intuitivos, los equipos buscarán formas de evadirlos. Aplicar un diseño centrado en flujos de trabajo eficientes para las herramientas internas garantiza que los estándares de seguridad se cumplan de manera natural y sin fricciones operativas.
 
+> **Comentario de Renzo Geomar Mamani Quispe:** Concuerdo con la visión del equipo. La gobernanza establece las reglas de juego y es el cimiento de la seguridad operativa. A nivel técnico, esto se traduce en configurar nuestros registros con políticas estrictas para que rechacen automáticamente imágenes que no estén firmadas o que no superen los umbrales de vulnerabilidad. Al automatizar estos "guardianes" directamente en la infraestructura, garantizamos entornos inmutables y seguros sin entorpecer la agilidad de los desarrolladores.
+
+> **Comentario de Edson Fabricio Subia Huaicane:**
+> Coincido en que la gobernanza solo funciona si está automatizada y no depende de la disciplina manual de cada desarrollador. Desde la ingeniería de sistemas la implementaría como *policy-as-code*: reglas declarativas (imágenes base permitidas, etiquetas obligatorias, umbral máximo de vulnerabilidades) que el propio pipeline de CI/CD y el registry (**Harbor**) validen antes de admitir una imagen, bloqueando de forma automática lo que no cumpla. Así deja de ser un control humano evitable y pasa a ser una barrera técnica reproducible, con evidencia registrada en cada ejecución.
+
 ---
 
 ## 3. Gestión de Licencias de Software
@@ -45,6 +50,10 @@ La gestión de licencias se enfoca en auditar y controlar el tipo de propiedad i
 > **Comentario Emanuel David Hilacondo Begazo:**
 > Concuerdo totalmente. Analizar repositorios de código abierto para seleccionar un framework de desarrollo requiere una verificación exhaustiva de cumplimiento y compatibilidad con licencias como MIT o GPL. Integrar este nivel de análisis directamente en el flujo de trabajo asegura que no haya conflictos legales al incorporar líneas de código o arquitecturas de terceros, protegiendo así la viabilidad del software.
 
+> **Comentario de Renzo Geomar Mamani Quispe:** Apoyo la postura de que el licenciamiento es un riesgo crítico a menudo ignorado. Desde la perspectiva de la ingeniería de software, la solución más eficiente es integrar la generación y el análisis de SBOMs (Software Bill of Materials) en nuestros pipelines de integración. Esto nos permite detectar y bloquear dependencias con licencias restrictivas (como ciertas variantes de GPL en contextos incompatibles) desde la fase de construcción, evitando tener que reescribir código o alterar la arquitectura en etapas avanzadas del proyecto.
+
+> **Comentario de Edson Fabricio Subia Huaicane:**
+> Añadiría que la verificación de licencias debería ejecutarse de forma automática en cada *build*, no como una revisión puntual. Integrando la generación de SBOM (por ejemplo con *Syft*) y un análisis de licencias en el pipeline se puede mantener una lista de licencias permitidas y prohibidas, de modo que el proceso falle automáticamente si una dependencia introduce una licencia incompatible con la política institucional. Esto evita descubrir el problema legal demasiado tarde y deja la evidencia versionada junto al artefacto, en lugar de depender de una revisión manual.
 ---
 
 ## 4. Trazabilidad del Software
@@ -63,6 +72,10 @@ La trazabilidad es la capacidad de rastrear el origen exacto, las modificaciones
 > **Comentario Emanuel David Hilacondo Begazo:**
 > La trazabilidad también actúa como un mapa detallado de nuestras dependencias. Al desarrollar aplicaciones que integran múltiples librerías complejas y componentes programáticos, mantener un registro exacto de las versiones utilizadas en cada imagen permite aislar fallos rápidamente y optimizar el sistema sin comprometer la integridad de la arquitectura general.
 
+> **Comentario de Renzo Geomar Mamani Quispe:** La trazabilidad es nuestra mejor herramienta de diagnóstico y depuración a nivel de infraestructura. Como mencionan mis compañeros, vincular cada contenedor desplegado a su *commit* exacto y almacenar de forma centralizada sus artefactos (en MinIO, por ejemplo) es vital. Esta trazabilidad estricta nos asegura que, ante cualquier comportamiento anómalo o brecha de seguridad reportada en producción, sepamos exactamente qué versión está corriendo, cómo se construyó y quién la aprobó, reduciendo el MTTR de manera drástica.
+
+> **Comentario de Edson Fabricio Subia Huaicane:**
+> Para que la trazabilidad sea útil ante un incidente debe estar encadenada automáticamente de extremo a extremo: cada imagen en **Harbor** tendría que poder rastrearse hasta el commit que la originó, el resultado del escaneo y la firma, mediante un identificador único que se propague por todo el pipeline. Me apoyaría en la procedencia (*attestations*) que ya generan herramientas como **Cosign** y la enlazaría al *issue* de la solicitud, de forma que localizar la imagen afectada por una vulnerabilidad sea una consulta y no una búsqueda manual. Lo complementaría con métricas de observabilidad (quién publicó, cuándo y con qué resultado) para auditar tendencias y no solo casos aislados.
 ---
 
 ## 5. Conclusión y Valor en la Empresa de Software
@@ -80,3 +93,8 @@ Evaluación general sobre la integración de estos tres pilares en el ciclo de v
 
 > **Comentario Emanuel David Hilacondo Begazo:**
 > En síntesis, la consolidación de estos tres pilares proporciona una arquitectura tecnológica robusta y confiable. Esto no solo estandariza los procesos internos, sino que garantiza que cada proyecto mantenga un nivel de integridad estructural, operativa y legal indispensable para un despliegue exitoso.
+
+> **Comentario de Renzo Geomar Mamani Quispe:** En definitiva, la integración de gobernanza, control de licencias y trazabilidad consolida una base de ingeniería verdaderamente madura. Construir software de calidad no se trata únicamente de programar buenas funcionalidades, sino de controlar rigurosamente cómo ese código se empaqueta, se audita y se despliega. Materializar estas políticas mediante automatización es el paso definitivo para instaurar una cultura DevSecOps real y ofrecer soluciones empresariales robustas y resilientes.
+
+> **Comentario de Edson Fabricio Subia Huaicane:**
+> En conclusión, los tres pilares aportan valor real solo si dejan de ser buenas intenciones y se convierten en controles automáticos dentro del ciclo de vida. Propondría consolidarlos en una única compuerta de publicación (una *definition of done* técnica) que ninguna imagen pueda esquivar: gobernanza validada por política, licencias verificadas y trazabilidad completa antes de etiquetar en **Harbor**. Medir el porcentaje de imágenes que superan esa compuerta sin intervención manual sería, a mi parecer, el mejor indicador de madurez del laboratorio y de su preparación para escalar a un entorno empresarial.

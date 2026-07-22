@@ -29,11 +29,14 @@ Los **Chapters** serán liderados por profesores con experiencia en industria (m
 - Chapter Frontend & UX
 
 <br>
-<div style="color: #d9534f; border-left: 4px solid #d9534f; padding-left: 10px; margin: 10px 0;">
-<strong>Comentario (Mauro Snayder Sullca Mamani):</strong><br>
-La propuesta organizacional basada en el Modelo Spotify facilita el desarrollo del proyecto mediante equipos multidisciplinarios. Como complemento, sería recomendable incorporar una estructura or[...]
-</div>
+
+> **Comentario (Mauro Snayder Sullca Mamani):**
+> La propuesta organizacional basada en el Modelo Spotify facilita el desarrollo del proyecto mediante equipos multidisciplinarios. Como complemento, sería recomendable incorporar una estructura organizacional para la operación del laboratorio, definiendo los roles y responsabilidades de los actores involucrados en la gestión de los recursos y servicios.
 
 > **Comentario (Christian Yana):**
 >
 > La adaptación del modelo Spotify al contexto académico está bien planteada. Para avanzar a ejecución, conviene especificar la configuración mínima en la primera etapa: número de squads y chapters a formar, responsables iniciales y entregables clave del primer sprint (por ejemplo: infraestructura mínima, catálogo inicial, runbooks). También es recomendable definir un par de métricas operativas para evaluar el progreso del modelo (por ejemplo: tiempo medio de ciclo de una solicitud y número de imágenes publicadas por mes).
+
+> **Comentario de Edson Fabricio Subia Huaicane:**
+> Buena adaptación del modelo. Para que la autonomía de los squads no genere retrabajo, enfatizaría dos cosas desde la ingeniería de sistemas: definir interfaces y *ownership* claros entre squads —sobre todo entre *Core Platform* e *Image & Container Management*, que comparten Harbor— y tratar lo transversal (CI/CD, seguridad, plantillas) como un *producto interno* que los Chapters mantienen y el resto consume, en lugar de que cada squad reinvente lo mismo. Alinear los límites de los squads con los límites técnicos del sistema (ley de Conway) reduce dependencias cruzadas; y, junto a las métricas ya propuestas, añadiría una de acoplamiento (porcentaje de historias que requieren coordinar con otro squad) para saber si el modelo realmente está dando autonomía.
+
