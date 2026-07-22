@@ -32,9 +32,9 @@ Curso de Organización y Métodos · Julio 2026
 
 ## Organización y Métodos, revisitada
 
-Durante décadas, Organización y Métodos (O&M) diseñó estructuras a partir de organigramas jerárquicos y manuales de procedimiento estáticos: una separación clara entre quien planifica y quien ejecuta.
+Durante décadas, Organización y Métodos (O&M) diseñó estructuras a partir de organigramas jerárquicos y manuales de procedimiento estáticos: una separación clara entre quien planifica y qu[...]
 
-Ese enfoque funciona cuando el problema es estable y repetitivo. Pero muchos proyectos actuales —como una plataforma tecnológica— enfrentan requisitos que emergen sobre la marcha y múltiples interesados con intereses distintos.
+Ese enfoque funciona cuando el problema es estable y repetitivo. Pero muchos proyectos actuales —como una plataforma tecnológica— enfrentan requisitos que emergen sobre la marcha y múltiples[...]
 
 > **Pregunta que guía esta sesión:** ¿Qué estructura organizacional diseñamos cuando el problema es complejo, cambiante y multidisciplinario — y no simplemente "complicado"?
 
@@ -103,7 +103,7 @@ El reto del diseño organizacional ágil: equipos con libertad para decidir cóm
 
 ## Origen y filosofía
 
-El Modelo Spotify es un patrón de diseño organizacional popularizado por la empresa Spotify (que aclara que evolucionó y nunca fue un modelo "cerrado") para escalar equipos ágiles manteniendo autonomía y alineación a la vez.
+El Modelo Spotify es un patrón de diseño organizacional popularizado por la empresa Spotify (que aclara que evolucionó y nunca fue un modelo "cerrado") para escalar equipos ágiles manteniendo[...]
 
 Se organiza en cuatro unidades complementarias, dos "verticales" (**Squad**, **Tribe**) y dos "horizontales" (**Chapter**, **Guild**), que forman una matriz de trabajo.
 
@@ -134,11 +134,7 @@ Agrupa varios squads que trabajan en un área de producto relacionada. Coordina 
 ## Chapter
 ### "La misma disciplina, repartida en varios squads"
 
-Agrupación transversal de personas que comparten una misma disciplina o especialidad, aunque trabajen en squads distintos. Garantiza estándares técnicos comunes y mentoría.
-
-- Estandariza calidad técnica entre squads
-- Desarrollo profesional y mentoría
-- No decide el día a día del squad
+Agrupación transversal de personas que comparten una misma disciplina o especialidad (por ejemplo, todos los desarrolladores backend, aunque estén repartidos en distintos squads). El chapte[...]
 
 ---
 
@@ -290,29 +286,33 @@ Se descartó: generaría un silo desconectado de la ejecución técnica y sería
 1. La estructura debe reflejar el tipo de problema: lo simple/complicado admite jerarquía; lo complejo requiere squads autónomos que aprendan iterando.
 2. Agilidad organizacional no significa "sin estructura": los Chapters y la matriz RACI muestran una estructura distinta, orientada a autonomía con alineación.
 3. Los dilemas organizacionales rara vez se resuelven creando más unidades separadas: a menudo la respuesta es un rol transversal + responsabilidad distribuida.
-4. Un mismo diseño (Tribe → Squads → Chapters) puede evolucionar de contexto académico a empresarial ajustando el número y enfoque de squads.
+4. Un mismo diseño (Tribe → Squads → Chapters) puede evolucionar de contexto académico a empresarial simplemente ajustando el número y enfoque de los squads.
 
 ---
 
 ## Conclusiones
 
-El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que O&M, aplicada a problemas complejos, no consiste en imponer un procedimiento fijo, sino en diseñar una estructura —el Modelo Spotify, en este ejemplo— que permita a equipos autónomos aprender, adaptarse y coordinarse con el resto de la organización.
+El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que O&M, aplicada a problemas complejos, no consiste en imponer un procedimiento fijo, sino en diseñar una estructura —el [...]
 
-*El valor pedagógico del caso está en observar cómo una decisión organizacional concreta —dónde ubicar el Chapter de Organización y Procesos— se deriva directamente de los principios de autonomía, alineación y del dominio "complejo" de Cynefin.*
+*El valor pedagógico del caso está en observar cómo una decisión organizacional concreta —dónde ubicar el Chapter de Organización y Procesos— se deriva directamente de los principios de[...] 
 
 ---
 
-## Preguntas de discusión
+## 9. Preguntas de discusión
 
 1. ¿Qué otros procesos del laboratorio son "complicados" (procedimiento claro) frente a los "complejos" (requieren experimentación)?
 
 - **Comentario (Mauro Snayder Sullca Mamani):** Como procesos complicados identifico el mantenimiento técnico de servidores y PCs, el etiquetado e inventariado de hardware, la configuración de redes VLAN y el control de acceso físico mediante código QR, ya que son tareas previsibles que requieren conocimiento experto y siguen procedimientos claros; mientras que como procesos complejos identifico el diseño de las políticas de actualización automática de contenedores sin romper proyectos activos, la gestión de licencias al pasar del entorno académico al empresarial y la definición del catálogo de imágenes oficiales en Harbor, puesto que involucran variables cambiantes que requieren experimentar, observar el uso de los estudiantes y adaptar el diseño continuamente.
 
+- **Comentario (Christian Yana):** Buena distinción. Propongo añadir: “Complicado = procedimiento reproducible; Complejo = requiere experimentación y validación” y un mini‑checklist (3 preguntas) para clasificar procesos en la práctica.
+
 <br>
 
 2. Si el proyecto creciera a 10 squads, ¿en qué punto convendría dividir el Tribe "Platform Lab" en dos tribes independientes?
 
-- **Comentario (Mauro Snayder Sullca Mamani):** Considero que el punto idóneo para dividir el Tribe se alcanza cuando la coordinación de dependencias entre los 10 squads vuelve lentas las entregas y las reuniones de alineación pierden agilidad, por lo que convendría separar la estructura en dos Tribes especializadas según su dominio técnico: una enfocada en la infraestructura y operación física ("Lab Operations & Infrastructure", para hardware, Proxmox y reservas) y otra orientada al desarrollo de software y seguridad ("Developer Platform & Enterprise Security", para el catálogo de Harbor, pipelines CI/CD y gobernanza).
+- **Comentario (Mauro Snayder Sullca Mamani):** Considero que el punto idóneo para dividir el Tribe se alcanza cuando la coordinación de dependencias entre los 10 squads vuelve lentas las entregas y las reuniones de alineación pierden agilidad, por lo que convendría separar la estructura en dos Tribes especializadas según su dominio técnico: una enfocada en la infraestructura y operación física del laboratorio ("Lab Operations & Infrastructure", para hardware, Proxmox y reservas) y otra orientada al desarrollo de software y seguridad ("Developer Platform & Enterprise Security", para el catálogo de Harbor, pipelines CI/CD y gobernanza).
+
+- **Comentario (Christian Yana):** Propongo un umbral práctico: considerar dividir cuando haya más de 8 squads o cuando >20% de las historias impliquen dependencias cruzadas que aumenten la coordinación; priorizar la separación por flujo de valor (Académico vs. Empresarial).
 
 <br>
 
@@ -320,8 +320,14 @@ El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que O&M, a
 
 - **Comentario (Mauro Snayder Sullca Mamani):** Si el Process Owner no dispone de tiempo protegido, el riesgo principal es generar una alta "deuda de procesos" (process debt), donde el equipo prioriza únicamente la escritura de código dejando la documentación obsoleta o informal, lo que crea silos de conocimiento que imposibilitan la transferencia del proyecto entre semestres y obliga a los nuevos estudiantes a perder tiempo tratando de entender cómo funciona la plataforma.
 
+- **Comentario (Christian Yana):** Sugiero reservar 1 día a la semana (≈20% del tiempo) para que el Process Owner documente procesos y mantener un runbook mínimo por proceso; además, medir el % de procesos con runbook y owner asignado como KPI.
+
 <br>
 
 4. ¿Cómo mediría, con indicadores concretos, si el modelo logra el equilibrio entre autonomía y alineación?
 
 - **Comentario (Mauro Snayder Sullca Mamani):** Para medir este equilibrio evaluaría la autonomía mediante el Cycle Time de despliegue (logrando que un squad publique una nueva versión o imagen en Harbor en menos de 48 horas sin depender de aprobaciones externas) y la alineación a través de la Tasa de Cumplimiento (Compliance Rate), garantizando que el 100% de los contenedores cuenten con su inventario SBOM, pasen los escaneos de vulnerabilidades con Trivy y estén firmados digitalmente con Cosign según los estándares del Chapter.
+
+- **Comentario (Christian Yana):** Para empezar, propongo 3 KPIs sencillos: Cycle Time de publicación en Harbor, MTTR y % de imágenes con SBOM y firma. Revisar estas métricas trimestralmente y ajustar metas.
+
+
