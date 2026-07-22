@@ -32,9 +32,9 @@ Curso de Organización y Métodos · Julio 2026
 
 ## Organización y Métodos, revisitada
 
-Durante décadas, Organización y Métodos (O&M) diseñó estructuras a partir de organigramas jerárquicos y manuales de procedimiento estáticos: una separación clara entre quien planifica y qu[...]
+Durante décadas, Organización y Métodos (O&M) diseñó estructuras a partir de organigramas jerárquicos y manuales de procedimiento estáticos: una separación clara entre quien planifica y quien ejecuta.
 
-Ese enfoque funciona cuando el problema es estable y repetitivo. Pero muchos proyectos actuales —como una plataforma tecnológica— enfrentan requisitos que emergen sobre la marcha y múltiples[...]
+Ese enfoque funciona cuando el problema es estable y repetitivo. Pero muchos proyectos actuales —como una plataforma tecnológica— enfrentan requisitos que emergen sobre la marcha y múltiples interesados con intereses distintos.
 
 > **Pregunta que guía esta sesión:** ¿Qué estructura organizacional diseñamos cuando el problema es complejo, cambiante y multidisciplinario — y no simplemente "complicado"?
 
@@ -103,7 +103,7 @@ El reto del diseño organizacional ágil: equipos con libertad para decidir cóm
 
 ## Origen y filosofía
 
-El Modelo Spotify es un patrón de diseño organizacional popularizado por la empresa Spotify (que aclara que evolucionó y nunca fue un modelo "cerrado") para escalar equipos ágiles manteniendo[...]
+El Modelo Spotify es un patrón de diseño organizacional popularizado por la empresa Spotify (que aclara que evolucionó y nunca fue un modelo "cerrado") para escalar equipos ágiles manteniendo autonomía y alineación a la vez.
 
 Se organiza en cuatro unidades complementarias, dos "verticales" (**Squad**, **Tribe**) y dos "horizontales" (**Chapter**, **Guild**), que forman una matriz de trabajo.
 
@@ -134,7 +134,11 @@ Agrupa varios squads que trabajan en un área de producto relacionada. Coordina 
 ## Chapter
 ### "La misma disciplina, repartida en varios squads"
 
-Agrupación transversal de personas que comparten una misma disciplina o especialidad (por ejemplo, todos los desarrolladores backend, aunque estén repartidos en distintos squads). El chapte[...]
+Agrupación transversal de personas que comparten una misma disciplina o especialidad, aunque trabajen en squads distintos. Garantiza estándares técnicos comunes y mentoría.
+
+- Estandariza calidad técnica entre squads
+- Desarrollo profesional y mentoría
+- No decide el día a día del squad
 
 ---
 
@@ -286,19 +290,19 @@ Se descartó: generaría un silo desconectado de la ejecución técnica y sería
 1. La estructura debe reflejar el tipo de problema: lo simple/complicado admite jerarquía; lo complejo requiere squads autónomos que aprendan iterando.
 2. Agilidad organizacional no significa "sin estructura": los Chapters y la matriz RACI muestran una estructura distinta, orientada a autonomía con alineación.
 3. Los dilemas organizacionales rara vez se resuelven creando más unidades separadas: a menudo la respuesta es un rol transversal + responsabilidad distribuida.
-4. Un mismo diseño (Tribe → Squads → Chapters) puede evolucionar de contexto académico a empresarial simplemente ajustando el número y enfoque de los squads.
+4. 4. Un mismo diseño (Tribe → Squads → Chapters) puede evolucionar de contexto académico a empresarial ajustando el número y enfoque de squads.
 
 ---
 
 ## Conclusiones
 
-El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que O&M, aplicada a problemas complejos, no consiste en imponer un procedimiento fijo, sino en diseñar una estructura —el [...]
+El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que O&M, aplicada a problemas complejos, no consiste en imponer un procedimiento fijo, sino en diseñar una estructura —el Modelo Spotify, en este ejemplo— que permita a equipos autónomos aprender, adaptarse y coordinarse con el resto de la organización.
 
-*El valor pedagógico del caso está en observar cómo una decisión organizacional concreta —dónde ubicar el Chapter de Organización y Procesos— se deriva directamente de los principios de[...] 
+*El valor pedagógico del caso está en observar cómo una decisión organizacional concreta —dónde ubicar el Chapter de Organización y Procesos— se deriva directamente de los principios de autonomía, alineación y del dominio "complejo" de Cynefin.*
 
 ---
 
-## 9. Preguntas de discusión
+## Preguntas de discusión
 
 1. ¿Qué otros procesos del laboratorio son "complicados" (procedimiento claro) frente a los "complejos" (requieren experimentación)?
 
