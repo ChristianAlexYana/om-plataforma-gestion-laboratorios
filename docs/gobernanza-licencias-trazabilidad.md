@@ -32,7 +32,7 @@ La gobernanza de imágenes define el conjunto de reglas y políticas que asegura
 > **Comentario de Edson Fabricio Subia Huaicane:**
 > Coincido en que la gobernanza solo funciona si está automatizada y no depende de la disciplina manual de cada desarrollador. Desde la ingeniería de sistemas la implementaría como *policy-as-code*: reglas declarativas (imágenes base permitidas, etiquetas obligatorias, umbral máximo de vulnerabilidades) que el propio pipeline de CI/CD y el registry (**Harbor**) validen antes de admitir una imagen, bloqueando de forma automática lo que no cumpla. Así deja de ser un control humano evitable y pasa a ser una barrera técnica reproducible, con evidencia registrada en cada ejecución.
 
-> **Comentario de Riveros Vilca Alberth Edwar:**
+> **Comentario de Alberth Edwar Riveros Vilca:**
 > La gobernanza debe pensarse desde el inicio como un sistema escalable. En una empresa de software en crecimiento, la incorporación de nuevos equipos y proyectos rápidamente puede volverse un cuello de botella si el catálogo de imágenes aprobadas no está versionado y documentado. Propongo mantener un registro viviente de imágenes base permitidas, con su ciclo de vida y propietarios asignados, para que la adopción de nuevas versiones sea un proceso ágil y no una revisión ad hoc que frene la entrega.
 
 ---
@@ -58,7 +58,7 @@ La gestión de licencias se enfoca en auditar y controlar el tipo de propiedad i
 > **Comentario de Edson Fabricio Subia Huaicane:**
 > Añadiría que la verificación de licencias debería ejecutarse de forma automática en cada *build*, no como una revisión puntual. Integrando la generación de SBOM (por ejemplo con *Syft*) y un análisis de licencias en el pipeline se puede mantener una lista de licencias permitidas y prohibidas, de modo que el proceso falle automáticamente si una dependencia introduce una licencia incompatible con la política institucional. Esto evita descubrir el problema legal demasiado tarde y deja la evidencia versionada junto al artefacto, en lugar de depender de una revisión manual.
 
-> **Comentario de Riveros Vilca Alberth Edwar:**
+> **Comentario de Alberth Edwar Riveros Vilca:**
 > Coincido en que la automatización es clave, y agregaría que el SBOM no debe generarse una sola vez sino regenerarse en cada build como parte del *Definition of Done* técnico. De esta forma, cada release lleva consigo un inventario actualizado de dependencias y licencias, lo que elimina la deuda técnica de cumplimiento y facilita auditorías sorpresa. Además, versionar el SBOM junto al artefacto en el registry permite rastrear exactamente qué introdujo licencias en cada despliegue concreto.
 
 ---
@@ -84,7 +84,7 @@ La trazabilidad es la capacidad de rastrear el origen exacto, las modificaciones
 > **Comentario de Edson Fabricio Subia Huaicane:**
 > Para que la trazabilidad sea útil ante un incidente debe estar encadenada automáticamente de extremo a extremo: cada imagen en **Harbor** tendría que poder rastrearse hasta el commit que la originó, el resultado del escaneo y la firma, mediante un identificador único que se propague por todo el pipeline. Me apoyaría en la procedencia (*attestations*) que ya generan herramientas como **Cosign** y la enlazaría al *issue* de la solicitud, de forma que localizar la imagen afectada por una vulnerabilidad sea una consulta y no una búsqueda manual. Lo complementaría con métricas de observabilidad (quién publicó, cuándo y con qué resultado) para auditar tendencias y no solo casos aislados.
 
-> **Comentario de Riveros Vilca Alberth Edwar:**
+> **Comentario de Alberth Edwar Riveros Vilca:**
 > Un punto que considero fundamental es utilizar el digest SHA256 como eje de trazabilidad en lugar de los tags, que son mutables y pueden generar confusión en entornos con múltiples despliegues. Cada imagen debería llevar embebido su digest como identificador único y vincularse automáticamente al issue de solicitud, al commit y al reporte de escaneo. De esta forma, ante un incidente, localizar la imagen exacta se convierte en una consulta directa y no en una búsqueda manual entre versiones potencialmente ambiguas.
 
 ---
@@ -110,5 +110,5 @@ Evaluación general sobre la integración de estos tres pilares en el ciclo de v
 > **Comentario de Edson Fabricio Subia Huaicane:**
 > En conclusión, los tres pilares aportan valor real solo si dejan de ser buenas intenciones y se convierten en controles automáticos dentro del ciclo de vida. Propondría consolidarlos en una única compuerta de publicación (una *definition of done* técnica) que ninguna imagen pueda esquivar: gobernanza validada por política, licencias verificadas y trazabilidad completa antes de etiquetar en **Harbor**. Medir el porcentaje de imágenes que superan esa compuerta sin intervención manual sería, a mi parecer, el mejor indicador de madurez del laboratorio y de su preparación para escalar a un entorno empresarial.
 
-> **Comentario de Riveros Vilca Alberth Edwar:**
+> **Comentario de Alberth Edwar Riveros Vilca:**
 > Para cerrar, propongo la creación de un dashboard de madurez que consolide métricas de los tres pilares: porcentaje de imágenes con gobernanza validada, acumulative score de licencias y completitud de trazabilidad. Esta herramienta no solo sirve como indicador interno de mejora continua, sino que también puede presentarse a clientes y auditorías como evidencia objetiva del nivel de control del laboratorio. Transformar estos datos en visibilidad es lo que permite escalar de una cultura de voluntariado técnico a una de responsabilidad medible.
