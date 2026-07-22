@@ -1,9 +1,5 @@
 # Procesos y Organización del Laboratorio
 
-> **Comentario (Christian Yana):**
->
-> La propuesta describe claramente los procesos y la matriz RACI. Se sugiere incorporar una sección práctica para el piloto que incluya: roles mínimos con nombre del puesto (responsable del catálogo, administrador de laboratorio, operador de infraestructura), estimación de dedicación semanal por rol y un ejemplo práctico de una solicitud con su recorrido completo (desde el docente hasta la publicación). Ese anexo ayudará a asignar recursos y a validar el proceso en la primera ejecución.
-
 **Documento Integral de Organización y Métodos**  
 **Proyecto:** Plataforma Híbrida de Gestión de Laboratorios  
 **Asignatura:** Organización y Métodos  
@@ -14,7 +10,8 @@
 
 ## 1. Introducción
 
-Este documento presenta la **organización completa** y los **procesos clave** del laboratorio de computación. Su propósito es estandarizar el funcionamiento, reducir tiempos improductivos, gara[...]
+Este documento presenta la **organización completa** y los **procesos clave** del laboratorio de computación. Su propósito es estandarizar el funcionamiento, reducir tiempos improductivos, garantizar trazabilidad y servir como referencia para la asignatura de **Organización y Métodos**.
+Este documento presenta la **organización completa** y los **procesos clave** del laboratorio de computación. Su propósito es estandarizar el funcionamiento, reducir tiempos improductivos, gara[...] 
 
 Se incluyen descripciones detalladas, diagramas BPMN textuales, matriz RACI, indicadores y propuestas de mejora.
 
@@ -164,3 +161,7 @@ Está diseñado para ser entregado como **trabajo de curso de Organización y M�
 ---
 
 ¿Deseas que agregue más procesos (ej. Gestión de Incidentes, Onboarding de Nuevos Usuarios, Cierre de Semestre, etc.) o que prepare una versión con PlantUML para generar diagramas reales?
+
+> ** Comentario de Rodrigo Estefanero:**
+
+> Lo más destacable de esta propuesta organizativa es que profesionaliza la gestión del laboratorio, operándolo como una verdadera empresa tecnológica. La implementación de una matriz RACI y diagramas BPMN elimina la ambigüedad en las responsabilidades, evitando cuellos de botella en la atención. Además, el fuerte enfoque en métricas de rendimiento (KPIs) —especialmente la meta de reducir la configuración del entorno a menos de 15 minutos— asegura que los estudiantes dediquen su tiempo a programar y no a lidiar con problemas de infraestructura. Es un enfoque totalmente orientado a la productividad y la mejora continua.
