@@ -1,13 +1,13 @@
 # Estado del Proyecto — Resumen de contribuciones y pasos restantes
 
-Este documento resume específicamente TODO lo que ya se implementó en el repositorio (por mí) y divide el trabajo restante en las partes necesarias para terminar el proyecto. Está escrito para [...]
+Este documento resume específicamente TODO lo que ya se implementó en el repositorio (por mí) y divide el trabajo restante en las partes necesarias para terminar el proyecto. Está escrito para ser pegado en el repositorio como documento operativo y referencia del equipo.
 
 ---
 
 ## ¿Qué se hizo (concretamente) — entregables añadidos al repo
 
 1. docs/runbooks/runbook-publicacion-imagen.md
-   - Runbook operativo completo: pasos detallados para recibir, validar, escanear (Trivy), firmar (cosign) y publicar imágenes en Harbor; checklist mínimo; criterios de aceptación; comandos de [...]
+   - Runbook operativo completo: pasos detallados para recibir, validar, escanear (Trivy), firmar (cosign) y publicar imágenes en Harbor; checklist mínimo; criterios de aceptación; comandos de ejemplo.
    - Commit: `0552f1e365140be1dc4fc4a18b99f181573bf617`.
 
 2. README.md (actualizado)
@@ -108,8 +108,3 @@ Si querés que avance, indicame cuál de estas tres acciones realizo ahora (pued
 ---
 
 *Documento generado automáticamente y añadido al repositorio cuando se indique.*
-
-
-> **Comentario (Christian Yana):**
-> 
-> Revisado.
