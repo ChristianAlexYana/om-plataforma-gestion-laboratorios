@@ -164,6 +164,8 @@ El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que Organi
 
 - **Comentario (Christian Yana):** Buena distinción. Propongo añadir una frase breve que diferencie "complicado" (procedimiento reproducible) de "complejo" (requiere experimentación) y un checklist de 3 ítems para clasificar procesos en la práctica.
 
+- **Comentario (Emanuel David Hilacondo Begazo):** Considero que un proceso "complicado" sería el modelado analítico para la asignación óptima de horarios y recursos físicos, ya que requiere conocimiento experto en investigación de operaciones, pero tiene una solución calculable. En contraste, un proceso "complejo" es el diseño de la interfaz de usuario; aunque apliquemos heurísticas de usabilidad estandarizadas, lograr que toda la comunidad adopte el sistema requiere prototipado constante, evaluación de los patrones de interacción y adaptación continua basada en el comportamiento real de los usuarios.
+- 
 <br>
 
 2. Si el proyecto creciera a 10 squads, ¿en qué punto convendría dividir el Tribe "Platform Lab" en dos tribes independientes?
@@ -174,6 +176,8 @@ El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que Organi
 
 - **Comentario (Christian Yana):** Propongo un umbral práctico: considerar dividir cuando haya más de 8 squads o cuando más del 20% de las historias impliquen dependencias cruzadas que aumenten la coordinación; priorizar la separación por flujo de valor (Académico vs. Empresarial).
 
+- **Comentario (Emanuel David Hilacondo Begazo):** Desde mi perspectiva, el punto crítico se alcanza cuando la complejidad técnica frena la entrega de valor y el diseño de la plataforma pierde coherencia global. Al llegar a ese límite operativo, sugiero separar la organización en una Tribu enfocada estrictamente en la infraestructura y operaciones híbridas, y otra dedicada puramente al desarrollo de software, la experiencia de usuario y la automatización inteligente.
+- 
 <br>
 
 3. ¿Qué riesgos organizacionales aparecen si el rol de Process Owner dentro de cada squad no tiene tiempo protegido para documentar procesos?
@@ -184,6 +188,8 @@ El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que Organi
 
 - **Comentario (Christian Yana):** Sugiero reservar 1 día a la semana (≈20% del tiempo) para que el Process Owner documente procesos y mantener un runbook mínimo por proceso; además, medir el % de procesos con runbook y owner asignado como KPI.
 
+- **Comentario (Emanuel David Hilacondo Begazo):** El mayor riesgo es la acumulación de deuda técnica y la pérdida de la lógica fundacional del sistema. Si los equipos desarrollan flujos automatizados avanzados o scripts complejos en lenguajes como Python o C++ sin documentar sus parámetros y arquitectura, el código se vuelve inmanejable. Esto genera silos de información que bloquean por completo la transferencia de responsabilidades cuando ocurre la rotación natural de estudiantes al finalizar el semestre académico.
+  
 <br>
 
 4. ¿Cómo mediría usted, con indicadores concretos, si el modelo está logrando el equilibrio entre autonomía y alineación?
@@ -193,5 +199,8 @@ El caso de la Plataforma Híbrida de Gestión de Laboratorios muestra que Organi
 - **Comentario (Rodrigo Estefanero):** Me apoyaría directamente en las métricas DORA. La autonomía la evidenciaría con una alta Frecuencia de Despliegue (Deployment Frequency), comprobando que los equipos pueden lanzar valor a producción sin depender de otros. La alineación la controlaría con la Tasa de Fallos (Change Failure Rate); si los equipos son verdaderamente autónomos pero respetan los estándares técnicos definidos por su Chapter, la innovación será constante pero la tasa de errores se mantendrá al mínimo.
 
 - **Comentario (Christian Yana):** Para empezar, propongo 3 KPIs sencillos: Cycle Time de publicación en Harbor, MTTR y % de imágenes con SBOM y firma. Revisar estas métricas trimestralmente y ajustar metas.
+
+- **Comentario (Emanuel David Hilacondo Begazo):** Propongo utilizar métricas mixtas para tener una visión completa. La autonomía puede medirse por la velocidad con la que un Squad logra integrar una nueva funcionalidad en la plataforma de manera independiente. La alineación debe auditarse garantizando que todas las entregas cumplan con los criterios unificados de su respectivo Chapter, como aprobar estrictamente evaluaciones bajo estándares ISO o criterios de usabilidad de Nielsen, asegurando que la agilidad del equipo no comprometa la calidad ni la consistencia del ecosistema.
+  
 
 
