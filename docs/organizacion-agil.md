@@ -29,10 +29,9 @@ Los **Chapters** serán liderados por profesores con experiencia en industria (m
 - Chapter Frontend & UX
 
 <br>
-<div style="color: #d9534f; border-left: 4px solid #d9534f; padding-left: 10px; margin: 10px 0;">
-<strong>Comentario (Mauro Snayder Sullca Mamani):</strong><br>
-La propuesta organizacional basada en el Modelo Spotify facilita el desarrollo del proyecto mediante equipos multidisciplinarios. Como complemento, sería recomendable incorporar una estructura or[...]
-</div>
+
+> **Comentario (Mauro Snayder Sullca Mamani):**
+> La propuesta organizacional basada en el Modelo Spotify facilita el desarrollo del proyecto mediante equipos multidisciplinarios. Como complemento, sería recomendable incorporar una estructura organizacional para la operación del laboratorio, definiendo los roles y responsabilidades de los actores involucrados en la gestión de los recursos y servicios.
 
 > **Comentario (Christian Yana):**
 >
