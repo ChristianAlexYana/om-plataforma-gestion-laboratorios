@@ -171,3 +171,4 @@ Este proceso regula la asignación de recursos físicos y capacidad de cómputo 
    - **Si hay disponibilidad:** La reserva se aprueba automáticamente y se bloquea el aula/recursos.
    - **Si hay conflicto:** El Administrador del Laboratorio interviene para proponer un horario alternativo o ajustar la asignación.
 4. **Habilitación de Reservas Libres (Estudiantes):** Las franjas horarias no ocupadas por clases o proyectos quedan disponibles para que los estudiantes reserven estaciones de trabajo de forma autónoma mediante validación por código QR.
+
