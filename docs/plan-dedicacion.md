@@ -1,11 +1,76 @@
-# Plan de Dedicación Semanal
+## Plan de Dedicación Semanal
 
-- **Proyecto Universitario:** 15-20 horas/semana por estudiante
-- **Proyecto Empresa:** 20-25 horas/semana por estudiante
-- Reuniones de Squad: 2 por semana
-- Revisión con Chapter (Profesor): 1 por semana
+### 1. Objetivo
+Definir una carga de trabajo realista y sostenible para asegurar el avance continuo del proyecto, manteniendo equilibrio entre desarrollo, documentación, coordinación y revisión técnica.
 
-> ** Comentario de Rodrigo: **
+### 2. Dedicación por tipo de proyecto
+
+#### Proyecto Universitario
+- **Dedicación estimada:** 15 a 20 horas por semana por estudiante
+- **Enfoque principal:**
+  - análisis y documentación,
+  - modelado de procesos,
+  - diseño de arquitectura,
+  - backlog y planificación,
+  - desarrollo incremental del MVP.
+
+#### Proyecto Empresa
+- **Dedicación estimada:** 20 a 25 horas por semana por estudiante
+- **Enfoque principal:**
+  - implementación de soluciones más robustas,
+  - integración de servicios,
+  - automatización,
+  - pruebas,
+  - preparación para operación real.
+
+### 3. Distribución sugerida del tiempo semanal
+
+Una distribución razonable podría ser:
+
+- **Desarrollo técnico:** 50–60%
+- **Documentación y trazabilidad:** 15–20%
+- **Reuniones de squad / coordinación:** 10–15%
+- **Revisión con chapter / feedback académico:** 5–10%
+- **Corrección y ajustes finales:** 5–10%
+
+### 4. Cadencia de trabajo
+
+#### Reuniones de Squad
+- **2 reuniones por semana**
+- Objetivo:
+  - revisar avances,
+  - detectar bloqueos,
+  - ajustar prioridades,
+  - coordinar dependencias.
+
+#### Revisión con Chapter
+- **1 reunión por semana**
+- Objetivo:
+  - validar calidad técnica,
+  - recibir retroalimentación,
+  - revisar alineación con objetivos académicos o del proyecto.
+
+### 5. Buenas prácticas
+Para que este plan funcione bien, conviene que el equipo:
+
+- registre avances de forma asíncrona antes de cada reunión,
+- reserve tiempo fijo para documentación,
+- revise periódicamente si la carga real coincide con la planificada,
+- ajuste alcance si el equipo se sobrecarga,
+- priorice entregables de mayor valor.
+
+### 6. Riesgos si no se respeta
+- retrasos por mala planificación,
+- saturación del equipo,
+- documentación incompleta,
+- reuniones improductivas,
+- pérdida de trazabilidad.
+
+## Resumen corto
+En este proyecto, el plan de dedicación semanal busca asegurar un ritmo constante de trabajo: suficiente para avanzar de forma seria, pero sin caer en sobrecarga. Para el entorno universitario se propone una dedicación moderada, y para el empresarial una más intensa, con pocas reuniones pero bien enfocadas.
+
+
+> **Comentario de Rodrigo Estefanero:**
 
 > Considero que este plan de dedicación refleja de manera muy precisa el ritmo de un entorno laboral ágil real. Al sumar una carga casi a tiempo completo entre ambos proyectos, nos obliga a priorizar tareas y gestionar el tiempo con una madurez estrictamente profesional. Además, la cadencia propuesta está muy bien equilibrada: mantener solo dos sincronizaciones de Squad y una revisión técnica evita caer en la "reunionitis" corporativa, asegurando que el grueso de nuestras horas se invierta directamente en el desarrollo, la innovación y la entrega de valor constante.
 
